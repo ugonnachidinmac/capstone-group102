@@ -1,0 +1,154 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    position: fixed;
+    top: -5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 25px 0 80px;
+    transition: 0.3s;
+}
+
+.nav-logo img {
+    display: block;
+    width: 148px;
+    height: 60px;
+    margin-left: 20px;
+}
+.nav-menu ul, .navigation {
+    display: flex;
+    list-style-type: none;
+    align-items: center; 
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.nav-menu ul li {
+    margin: 0 20px;
+    padding-right: 55px;
+}
+
+.nav-menu ul li .link {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding-bottom: 15px;
+    position: absolute;
+}
+.evalope{
+    display: none;
+    position: relative;
+    top: 5px;
+}
+.hideout{
+    display: none;
+}
+.link:hover,
+.active {
+    border-bottom: 2px solid #000;
+}
+.nav-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.nav-button .btn {
+    padding: 5px 25px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+   
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(241, 201, 40);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease;
+    width: 110px;
+    height: 33px;
+}
+.nav-button .btn a{
+    color: rgb(241, 201, 40);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.footer{
+    background-color: rgb(25, 84, 0);
+    width: 1440px;
+    height: 300px;
+    padding: 40px 20px 30px 90px;
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    gap:120px; 
+    cursor: pointer;
+}
+.footer-content2{
+    display: flex;
+    flex-direction: row;
+    gap: 60px; 
+}
+.displaynot h5{
+    display: none;
+}
+.the-lists li{
+    display: none;
+}
+.logo-image{
+    background-color: white; 
+}
+.logo-image-text{
+    color: white;
+    font: 18px;
+    font-weight: normal;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+.list h5{
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 30px;
+}
+.the-list li{
+    font-size: 18px;
+    font-weight: normal;
+    list-style: none;
+    color: white;
+    line-height: 1.5;
+}
+.toggle-menu{
+    display: none;  
+   }
+.showcase {
+    position: relative;
+    height: 500px;
+    margin-top: 55px;
+  }
+
+  .bg-image {
+    opacity: 0.3;
+    width: 100%;
+    height: 500px;
+  }
+
+  .bg-img-title {
+    position: absolute;
+    top: 3px;
+    left: 600px;
+  }

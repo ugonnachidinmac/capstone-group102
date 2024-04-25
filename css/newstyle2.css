@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        
+body {
+    font-family: 'Inter', sans-serif; /* Apply Inter font to the body */
+    /* background-color: rgb(190, 190, 194);  */
+}
+.container{
+    background-color: white;
+    width: 300px;
+    margin: 150px auto;
+    height: 550px;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+.container-contactpg{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    height: 600px;
+    padding: 70px 10px 0 80px;
+    gap: 40px;
+}
+.contact-container{
+    width: 50%;
+}
+h2{
+    padding-top: 15px;
+    text-align: left;
+    width: 565px;
+    margin-bottom: 20px;
+    color: rgb(46, 153, 0);
+    font-weight: 700;
+    font-size: 57px;
+
+}
+p{
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.form-container form{
+    background-color: white;
+    width: 50%;
+    margin: 0;
+    height: 450px;
+    border-radius: 10px;
+    padding: 25px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+}
+form{
+    width: 606px;
+}
+.input-field{
+    width: 565px;
+    height: 35px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px 5px 33px;
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 5px;
+    outline: none;
+    /* transition: .2s ease */
+}
+.textarea{
+    font-size: 18px;
+}
+.input-box i{
+    position: relative;
+    top: -25px;
+    left: 5px;
+    color: rgb(186, 183, 183);
+}  
+.input-box img{
+    width: 20px;
+    margin: 0 4px;
+}
+::-webkit-input-placeholder{
+    color: rgb(186, 183, 183);
+    padding-left: 8px; 
+}
+.input-box + .input-box {
+    margin-bottom: -13px; 
+}
+#message{
+    width: 572px;
+    height: 260px;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+.send-msg{
+    padding: 8px;
+    width: 572px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgb(241, 201, 40);
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+button{
+    padding: 8px;
+    width: 250px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(241, 201, 40);
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(243, 193, 10, 0.549);
+    color: rgb(56, 53, 53);
+}
+.size1{
+    width: 25px;    
+}
+.size2{
+    width: 25px;   
+}
+.image{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    font-size: 9.5px;
+    text-decoration: none;
+    color: rgba(243, 193, 10, 0.913);
+}
+label{
+    font-size: 12px;
+}
+.agreement{
+    margin-bottom: 15px;
+    color:  rgb(173, 171, 171);
+}
+.or{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+.or span{
+    margin: 0;
+}
+.size1{
+    width: 25px;  
+}
+.size2{
+    width: 25px;
+    
+}
+.image{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#hr1{
+    width: 250px;
+   margin-left: 0;
+   margin-right: 15px;
+}
+#hr2{
+    width: 250px;
+    margin-right: 0;
+   margin-left: 15px;
+}
