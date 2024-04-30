@@ -30,7 +30,15 @@ input{
     border: 1px solid gray;
     /* display: inline; */
     width: 420px;
-    margin: 15px 60px 15px 250px;
+    margin: 15px 140px 15px 250px;
+    border-radius: 20px;
+    padding-top: 5px;
+} 
+#searchbars{
+    border: 1px solid gray;
+    /* display: inline; */
+    width: 420px;
+    margin: 15px 140px 15px 220px;
     border-radius: 20px;
     padding-top: 5px;
 } 
@@ -48,24 +56,35 @@ input{
 .icons-nav img{
     position: relative;
     top: -40px;
-    margin: 5px 2px 5px 80px;
+    margin: 5px 2px 5px 30px;
     padding-top: 40px;
     width: 22px;
 }
 #notification{
     position: relative;
     top: 20px;
+  
 }
 #red-icon{
     position: absolute;
-    left: 749px;
+    left: 750px;
+    top: 10px;
+}
+#red-iconf{
+    position: absolute;
+    left: 830px;
+    top: 10px;
+}
+#red-iconse{
+    position: absolute;
+    left: 800px;
     top: 10px;
 }
 #profile-img{
     margin: 5px 20px 5px 30px;
 }
 nav > div:nth-child(4) {
-    margin: 5px 20px 5px 0;
+    margin: 10px 20px 5px 0;
 }
 aside{
     display: flex;
@@ -209,4 +228,319 @@ aside{
 }
 #main-container > img:nth-child(6){
     width: 900px;
+}
+/* 
+subscription css */
+.search-bar:active{
+    visibility: hidden;
+}
+.notification{
+    margin-left: 730px;
+}
+.arrowDown{
+    width: 15.97px;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    left: 970px;
+}
+.profile-details{
+    position: absolute;
+    top: 10px;
+    left: 844px;
+}
+.subscription-container div:nth-child(1) h3{
+    font-size: 22px;
+    font-weight: 400px;
+    margin-bottom: 45px;
+}
+.subscription-container div:nth-child(1) p{
+    font-size: 19px;
+    font-weight: 200px;
+    margin-bottom: 40px;
+}
+.subflex{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.subflex div:nth-child(1){
+    width: 391px;
+    height: 598.74px;
+    background-color: white;
+}
+.subflex-two >img{
+    width: 161.94px;
+    height: 109.66px;
+    margin: 30px 0 20px 20px;
+}.subflex-two >p{
+    margin-left: 20px;
+    font-size: 19px;
+    font-weight: 400px;
+}
+p span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.subflex-three img{
+    width: 18.28px;
+    height: 18.28px;
+    margin-left: 20px;
+    margin-top: -19px;
+    /* position: absolute;
+    top: 535px; */
+}
+.subflex-three{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.subflex-four{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    /* margin-bottom: 20px; */
+}
+.subflex-five{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.subflex-three div{
+    font-size: 15px;
+    width: 313.18px;
+    height: 91px;
+    margin-top: -19px;
+}
+.subflex-four img{
+    width: 18.28px;
+    height: 18.28px;
+    margin-left: 20px;
+    margin-top: -19px;
+    /* position: absolute;
+    top: 535px; */
+}
+.subflex-four div{
+    font-size: 15px;
+    width: 313.18px;
+    height: 91px;
+    margin-top: -19px;
+}
+.subflex-five img{
+    width: 18.28px;
+    height: 18.28px;
+    margin-left: 20px;
+    margin-top: -30px;
+  
+    /* position: absolute;
+    top: 535px; */
+}
+.subflex-five div{
+    font-size: 15px;
+    width: 313.18px;
+    height: 91px;
+    margin-top: -30px;
+}
+.Subscribe{
+    background-color: #F1C928;
+    width: 344px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 30px;
+    padding-top: 8px;
+}
+.Subscribe a{
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 125px;
+    
+}
+.green-colored{
+    background-color: rgb(46, 153, 0);
+    width: 229px;
+    color: white;
+}
+.green-colored a{
+    color: white;
+}
+
+/* column two */
+.subflex-twob{
+    width: 391px;
+    height: 598.74px;
+    background-color: white;
+}.subflex-twob >img{
+    width: 161.94px;
+    height: 109.66px;
+    margin: 30px 0 20px 20px;
+}.subflex-twob >p{
+    margin-left: 20px;
+    font-size: 19px;
+    font-weight: 400px;
+    margin-bottom: 38px;
+}
+
+.arrow-right{
+    width: 14.62px;
+    height: 14.62px;
+    margin-top: 60px;
+    margin-left: 750px;
+}
+
+/* 
+setting css */
+.form-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 1032px;
+    height: 501px;
+    background-color: #FFFFFF80;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.firstform-col{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 229px;
+    height: 37px;
+    margin-bottom: 25px;
+    color: black;
+    padding-left: 20px;
+    padding-top: 5px;
+    font-size: 16px;
+    background-color: white;
+}
+.box-color{
+    background-color:  #2E9900;
+    color: white;
+}
+.firstform-col img{
+    width: 25px;
+    height: 24px;
+}
+.subscription-containerse div:nth-child(1) p{
+    font-size: 19px;
+    font-weight: 200px;
+    margin-bottom: 20px;
+}
+.info-boxes{
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.Profile{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+hr{
+    width: 7945px;
+    margin-bottom: 10px;
+}
+.Profile div{
+    font-size: 15px;
+    font-weight: bold;
+}
+.profile-saving{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+.buttonSD{
+    margin-top: 20px;
+}
+.buttonSD button:nth-child(1){
+    font-size: 14px;
+    background-color: #F1C928;
+    padding: 10px;
+    width: 98px;
+    height: 37px;
+    border: none;
+    border-radius: 5px;
+}
+.buttonSD button:nth-child(2){
+    font-size: 14px;
+    color: #F1C928;
+    padding: 10px;
+    width: 98px;
+    height: 37px;
+    border: 1px solid #F1C928;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-left: 20px;
+}
+.label-setting{
+    font-size: 19px;
+    font-weight: bold;
+    color: #333; /* Example color */
+    /* margin-bottom: 20px;  */
+    padding: 5px;
+}
+.label-setting2{
+    font-size: 19px;
+    font-weight: bold;
+    color: #333; /* Example color */
+    margin-bottom: 20px;  
+    padding: 5px;
+    margin-top: 90px;
+}
+.input-setting {
+    width: 299px;
+    height: 56px;
+    padding: 8px  8px  8px 20px; /* Example padding */
+    border: 1px solid #ccc; /* Example border */                                               
+    border-radius: 5px; /* Example border radius */
+    box-sizing: border-box;
+    font-size: 14px; /* Example font size */
+    color: #555; /* Example color */
+    /* margin-bottom: 10px; Example margin */
+    margin-top: 60px;
+    margin-left: -5px;
+}
+.input-setting2 {
+    width: 299px;
+    height: 56px;
+    padding: 8px  8px  8px 20px; /* Example padding */
+    border: 1px solid #ccc; /* Example border */
+    border-radius: 5px; /* Example border radius */
+    box-sizing: border-box;
+    font-size: 14px; /* Example font size */
+    color: #555; /* Example color */
+    /* margin-bottom: 10px; Example margin */
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+/* Style for the input placeholder */
+.input-setting::placeholder {
+    color: #00000080;
+    font-size: 16px;
+}
+.input2{
+    margin-top: -20px;
+}
+.inputboxes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    gap: 20px;
+}
+.input4{
+    width: 299px;
+    height: 56px;
+    padding: 8px  8px  8px 20px; /* Example padding */
+    border: 1px solid #ccc; /* Example border */
+    border-radius: 5px; /* Example border radius */
+    box-sizing: border-box;
+    font-size: 14px; /* Example font size */
+    color: #555; /* Example color */
+    /* margin-bottom: 10px; Example margin */
+    margin-top: 60px;
+    margin-left: -5px;
 }

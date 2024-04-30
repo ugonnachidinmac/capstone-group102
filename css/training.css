@@ -48,7 +48,7 @@ nav{
 .left-header{
     display: flex;
     flex-direction: row;
-    margin-right: 520px;
+    margin-right: 679px;
     border-radius: 8px;
 }
 
@@ -75,12 +75,14 @@ nav{
     top: 10px;
     margin-left: 30px;
 }
-.left-header p:nth-child(3){
+.left-header a:nth-child(3){
     position: relative;
-    top: 9px;
-    font-size: 24px;
+    top: 15px;
+    font-size: 18px;
     font-weight: 700;
     margin-left: 8px;
+    text-decoration: none;
+    color: black;
 }
 .right-header{
     display: flex;
@@ -104,6 +106,10 @@ nav{
     margin-left: 48px;
     color: black;
     font-style: normal;
+    font-weight: bold;
+}
+.right-header a{
+    text-decoration: none;
 }
 .store a{
     color: black;
@@ -582,13 +588,14 @@ aside{
 /*page/html/marketdetaliupload.html*/
 
 .container-upload{
-    width: 609px;
+    width: 609px;  
     height: 980px;
     background-color: white;
     margin-top: 95px;
     margin-left: 150px;
     padding:45px 50px 20px 50px;
     border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .container-upload h2:nth-child(2){
     text-align: center;
@@ -713,7 +720,7 @@ aside{
     border: 1px solid #727A90;
     border-radius: 5px;
     margin-top: 50px;
-    margin-left: 110px;
+    margin-left: 90px;
     color: #727A90;
 }
 .button-option button:nth-child(2){
@@ -724,11 +731,229 @@ aside{
     background-color: #F1C928;
     border-radius: 5px;
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 90px;
     color: #000000;
     border: none;
     
 }
 .close{
     cursor: pointer;
+}
+
+/* my sotre css */
+
+.left-headerstore{
+    display: flex;
+    flex-direction: row;
+    margin-right: 710px;
+    border-radius: 8px;
+}
+
+/* .left-headerstore div:nth-child(1){
+    background-color: #EFF0F3;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: 30px;
+    /* padding: 8px; 
+} */
+.left-headerstore img:nth-child(1){
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    margin-left: 30px;
+    /* padding: 8px; */
+}
+.left-headerstore a:nth-child(2){
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    top: 15px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+.left-headerstore a:nth-child(3){
+    position: relative;
+    top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 8px;
+    text-decoration: none;
+    color: black;
+}
+.right-headerstore{
+    display: flex;
+    flex-direction: row;
+    background: #F1C928;
+    width: 172px;
+    height: 33px;
+    position: relative;
+    top: 15px;
+    border-radius: 4px;
+}
+.right-headerstore img:nth-child(1){
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.right-headerstore a:nth-child(2){
+    position: relative;
+    top: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* market place page css */
+
+.market-plc p{
+    font-size: 57px;
+    font-weight: 700px;
+    text-align: left;
+    color: rgb(46, 153, 0);
+    padding: 70px 20px 0 110px;
+}
+.most{
+    width: 1500px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 20px 30px 110px;
+}
+.most h2:nth-child(1){
+   color: black;
+   font-size: 32px;
+   font-weight: 700px;
+   margin-right: 920px;
+}
+.most div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 28px;
+}
+.most div:nth-child(2){
+    z-index: -50;
+}
+.most div:nth-child(2) p{
+    font-size: 19px;
+    font-weight: 600px;
+}
+.most div:nth-child(2) img{
+    width: 27px;
+    height: 27px;
+}
+.card-container{
+    width: 330px;
+    height: 440px;
+    background-color: white;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    z-index: -90;
+    border-radius: 10px;
+}
+.cards img:nth-child(1){
+    width: 320px;
+    height: 224px; 
+    padding: 15px 10px 5px 15px;
+}
+.discription div:nth-child(1) h3{
+    font-size: 22px;
+    font-weight: 700px;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+.discription div:nth-child(1) img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 290px;
+    top: -10px; 
+    z-index: -50;
+}
+.discription p{
+    font-size: 19px;
+    font-weight: 600;
+    text-align: left;
+    color: #4880FF;
+    margin: 10px 0 10px 0;
+    padding-left: 15px;
+}
+.stars div:nth-child(1) img{
+    width: 20px;
+    height: 20px;
+}
+.stars img:nth-child(1){
+    padding-left: 15px;
+}
+.stars p:nth-child(6){
+    position: relative;
+    top: -35px;
+    left: 125px;
+    color: rgb(172, 164, 164);
+}
+.discription img:nth-child(4){
+    width: 20px;
+    height: 20px;
+}
+.discription div:nth-child(1){
+    margin-bottom: -20px;
+}
+.action-button{
+    display: flex;
+    flex-direction: row;
+    margin-top: -15px;
+    margin-left: 15px;
+}
+.action-button div:nth-child(1){
+    padding: 10px 15px;
+    border: 1px solid  #F1C928;
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    color: #F1C928;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-right: 58px;
+}
+.action-button div:nth-child(2){
+    padding: 10px 25px;
+    background-color: #F1C928;
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.displayout{
+    display: flex;
+    flex-direction: row;
+    gap: 15px; 
+    margin-left: 5px;
+    width: 1245px;
+    /* gap: 25px; */
+    margin-bottom: 25px;
+   
+}
+.see-more{
+    padding: 10px 25px;
+    background-color: #F1C928;
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 650px;
 }

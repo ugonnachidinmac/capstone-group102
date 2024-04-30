@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="../css/newstyle2.css">
-    <link rel="stylesheet" href="../css/loginsignup.css">
+    <title>Home Page</title>
     <link rel="stylesheet" href="../css/Homepage.css">
-    <script type="module" src="../javascriptfile/script1.js" defer></script>
-
+    <link rel="stylesheet" href="../css/popup.css">
 </head>
 <body>
+    <div id="marblur">
     <header class="nav">
             <div class="nav-logo">
                 <img src="../image/logo.png" alt="logo image">
@@ -19,15 +17,13 @@
                 <input type="checkbox" class="toggle-menu">
                 <div class="hamburger"></div>
                 <ul class="menu">
-                   
                     <li><a href="../index.html" class="link"> <i class="evalope"><img src="../image/Home.png" alt=""></i>Home</a></li>
                     <li><a href="../index.html" class="link"><i class="evalope"><img src="../image/aboutus.png" alt=""></i>About Us</a></li>
                     <li><a href="../html/marketplc.html" class="link"><i class="evalope"><img src="../image/aboutus.png" alt=""></i>Products</a></li>
                     <li><a href="../html/contactuspg.html" class="link"><i class="evalope"><img src="../image/Phonehandle.png" alt=""></i>Contact Us</a></li>
-                    <li><a href="../html/marketplc.html" class="link"><i class="evalope"><img src="../image/market.png" alt=""></i>Market Place</a></li> 
-                    <li><a href="#market" class="link hideout"><i class="evalope"><img src="../image/Login.png" alt=""></i>Sign Up</a></li> 
-                    <li><a href="#market" class="link hideout"><i class="evalope"><img src="../image/SignIn.png" alt=""></i>Log In</a></li> 
-                   
+                    <li><a href="#market-plc" class="link"><i class="evalope"><img src="../image/market.png" alt=""></i>Market Place</a></li> 
+                    <li><a href="../index.html" onclick="togglee()" class="link hideout"><i class="evalope"><img src="../image/Login.png" alt=""></i>Sign Up</a></li> 
+                    <li><a href="../index.html" onclick="martoggle()" class="link hideout"><i class="evalope"><img src="../image/SignIn.png" alt=""></i>Log In</a></li> 
                 </ul>
             </div>
             <div class="nav-button">
@@ -37,49 +33,205 @@
             </div>
     </header> 
 
-    
-    <div class="container-contactpg">
-        <div class="contact-container">
-            <h2>Contact Us</h2>
-            <p>Welcome to Agritech! We're delighted that you're interested in connecting with us. Whether you're a farmer looking to explore vertical farming opportunities, a potential partner interested in collaboration, or a curious enthusiast eager to learn more about our innovative solutions, we're here to assist you every step of the way.
-            Got questions, feedback, or ideas to share? Our dedicated team is ready to listen and assist you. Feel free to reach out to us via the contact form below, and we'll get back to you promptly.</p>
+    <section class="section1" style="background-image: image-set(url('../image/welcomebackgrounimage.png'));">
+        <div class="firstp">
+            <p class="welcome" id="welcome">Welcome to <span style="color: rgb(248, 200, 9);">AgritechLink</span> Your Gateway to Sustainable Agriculture and Market Place!
+            </p>
+            <div class="colorb">
+            <p class="mission">
+                At AgritechLink, we're on a mission to revolutionize farming and reshape the future of agriculture. Whether you're a farmer, partner, visitor, or buyer, you're part of our vibrant community dedicated to driving positive change in the agricultural industry.
+                Explore our platform to discover our innovative farm solution, access high-quality farm products, and connect with like-minded individuals and businesses committed to sustainability and growth. Together, let's cultivate a brighter future for agriculture and our planet.
+            </p> 
+            <div class="get-started">
+                <button>Get started</button>
+            </div>   
         </div>
+    </section>
+    <section class="section">
+        <div class="market-plc" id="market-plc">
+            <p>Market Place</p>
+        </div>
+        <div class="most">
+            <h2>Most Popular</h2>
+           <div>
+            <p class="explore">Explore</p>
+            <img src="../image/arrowup.png" alt="">
+           </div>
+        </div>
+    <div class="displayout">
+        <div class="displayout1">
+                <div class="cards">
+                    <img src="../image/marketplcimg1.png" alt="">
+                </div>
+                <div class="discription">
+                    <div>
+                        <h3>Products Name</h3>
+                        <img src="../image/love.png" alt="">
+                    </div>
+                    <p>$120.00</p>
+                    <div class="stars">
+                        <img src="../image/stars.png" alt="">
+                        <img src="../image/stars.png" alt="">
+                        <img src="../image/stars.png" alt="">
+                        <img src="../image/stars.png" alt="">
+                        <img src="../image/star-gray.png" alt="">
+                        <p>(131)</p>
+                    </div>
+                    <div class="action-button">
+                        <div>Add to Cart</div>
+                        <div>Buy Now</div>
+                    </div>
+                </div>
+        </div>
+        <div class="displayout2">
+            <div class="cards">
+                <img src="../image/marketplcimg2.png" alt="">
+            </div>
+            <div class="discription">
+                <div>
+                    <h3>Products Name</h3>
+                    <img src="../image/love.png" alt="">
+                </div>
+                <p>$120.00</p>
+                <div class="stars">
+                    <img src="../image/stars.png" alt="">
+                    <img src="../image/stars.png" alt="">
+                    <img src="../image/stars.png" alt="">
+                    <img src="../image/stars.png" alt="">
+                    <img src="../image/star-gray.png" alt="">
+                    <p>(131)</p>
+                </div>
+                <div class="action-button">
+                    <div>Add to Cart</div>
+                    <div>Buy Now</div>
+                </div>
+            </div>
+    </div>
+    <div>
+        <div class="cards">
+            <img src="../image/marketplcimg3.png" alt="">
+        </div>
+        <div class="discription">
+            <div>
+                <h3>Products Name</h3>
+                <img src="../image/love.png" alt="">
+            </div>
+            <p>$120.00</p>
+            <div class="stars">
+                <img src="../image/stars.png" alt="">
+                <img src="../image/stars.png" alt="">
+                <img src="../image/stars.png" alt="">
+                <img src="../image/stars.png" alt="">
+                <img src="../image/star-gray.png" alt="">
+                <p>(131)</p>
+            </div>
+            <div class="action-button">
+                <div>Add to Cart</div>
+                <div>Buy Now</div>
+            </div>
+        </div>
+</div>
+    </div>
 
-        <div class="form-container">
-            <form action="">
-                    <div class="input-box">
-                        <input type="text" class="inputbox input-field" id="email" placeholder="Full Name"  required>
-                        <i class="icon"><img src="../image/user.png" alt=""></i>
-                    </div> 
-
-                    <div class="input-box">
-                        <input type="text" class="inputbox input-field" id="email" placeholder="Email Address"  required>
-                        <i class="icon"><img src="../image/email.png" alt=""></i>
-                    </div> 
-                   
-                    <div class="input-box">
-                        <input type="text" class="inputbox input-field" id="password" placeholder="Phone number"  required>
-                        <i class="icon"><img src="../image/phonehandleblack.png" alt=""></i>
-                    </div> 
-                    <textarea name="" id="message" cols="" rows="" class="textarea input-field"  placeholder="Your message"></textarea>
-                  
-                    <button class="send-msg">Send Message</button>
-            
-            </form>
+    <div class="most">
+        <h2>Best Seller</h2>
+       <div>
+        <p class="explore">Explore</p>
+        <img src="../image/arrowup.png" alt="">
+       </div>
+    </div>
+<div class="displayout">
+    <div class="displayout1">
+            <div class="cards">
+                <img src="../image/marketplcimg4.png" alt="">
+            </div>
+            <div class="discription">
+                <div>
+                    <h3>Products Name</h3>
+                    <img src="../image/love.png" alt="">
+                </div>
+                <p>$120.00</p>
+                <div class="stars">
+                    <img src="../image/stars.png" alt="">
+                    <img src="../image/stars.png" alt="">
+                    <img src="../image/stars.png" alt="">
+                    <img src="../image/stars.png" alt="">
+                    <img src="../image/star-gray.png" alt="">
+                    <p>(131)</p>
+                </div>
+                <div class="action-button">
+                    <div>Add to Cart</div>
+                    <div>Buy Now</div>
+                </div>
+            </div>
+    </div>
+    <div class="displayout2">
+        <div class="cards">
+            <img src="../image/marketplcimg5.png" alt="">
+        </div>
+        <div class="discription">
+            <div>
+                <h3>Products Name</h3>
+                <img src="../image/love.png" alt="">
+            </div>
+            <p>$120.00</p>
+            <div class="stars">
+                <img src="../image/stars.png" alt="">
+                <img src="../image/stars.png" alt="">
+                <img src="../image/stars.png" alt="">
+                <img src="../image/stars.png" alt="">
+                <img src="../image/star-gray.png" alt="">
+                <p>(131)</p>
+            </div>
+            <div class="action-button">
+                <div>Add to Cart</div>
+                <div>Buy Now</div>
+            </div>
+        </div>
+</div>
+<div>
+    <div class="cards">
+        <img src="../image/marketplcimg6.png" alt="">
+    </div>
+    <div class="discription">
+        <div>
+            <h3>Products Name</h3>
+            <img src="../image/love.png" alt="">
+        </div>
+        <p>$120.00</p>
+        <div class="stars">
+            <img src="../image/stars.png" alt="">
+            <img src="../image/stars.png" alt="">
+            <img src="../image/stars.png" alt="">
+            <img src="../image/stars.png" alt="">
+            <img src="../image/star-gray.png" alt="">
+            <p>(131)</p>
+        </div>
+        <div class="action-button">
+            <div>Add to Cart</div>
+            <div>Buy Now</div>
         </div>
     </div>
-   
+</div>
+</div>
+
+<div class="see-more">
+    <div>See More</div>
+</div>
+    
+
+        
     <section class="section-footer" id="market">
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-content2">
-                    <div>
+                    <div class="footer-logo-p">
                         <img src="../image/logo.png" alt="logo" class="logo-image">
-                    <p class="logo-image-text">
-                        We're on a mission to <br>
-                        revolutionize farming and <br>
-                        reshape the future of agriculture.      
-                    </p>
+                        <p class="logo-image-text">
+                            We're on a mission to <br>
+                            revolutionize farming and <br>
+                            reshape the future of agriculture.      
+                        </p>
                     </div>
                     <div  class="displaynot">
                         <h5>Navigation</h5>
@@ -112,10 +264,10 @@
                 <div  class="list">
                     <h5>Navigation</h5>
                     <ul class="the-list">
-                        <a href="../index.html"><li>Home</li></a>
+                        <a href="#welcome"><li>Home</li></a>
                         <a href="#about-heading"><li>About Us</li></a>
                         <a href="#about-heading"><li>Products</li></a>
-                        <a href="html\contactuspg.html"><li>Contact Us</li></a>
+                        <a href="#about-heading"><li>Contact Us</li></a>
                         <li>Market Place</li>
                     </ul>
                 </div>
@@ -125,13 +277,14 @@
                         <li>Email</li>
                         <li>Phone No.:</li>
                         <li>Adress</li>
-                        <a href="#about-heading"><li>About Us</li></a>
                     </ul>
                 </div>
             </div>
             
         </footer>
     </section>
+</div>
+
 
 <!-- form login -->
 <form action="" onsubmit="return validateForm()">
@@ -239,6 +392,5 @@
     }
 </script> -->
 <script src="javascriptfile\homepg.js"></script>
-
 </body>
 </html>
