@@ -713,7 +713,7 @@ hr {
 } */
 
 /* Responsiveness */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .hamburger,
   .toggle-menu {
     display: block;
@@ -956,11 +956,11 @@ hr {
   }
 }
 
-@media screen and (max-device-width: 834px) {
+/* @media screen and (max-device-width: 834px) {
   .about-image img {
     width: 450px;
     height: 450px;
     margin-bottom: 0;
     padding-bottom: 0;
   }
-}
+} */
