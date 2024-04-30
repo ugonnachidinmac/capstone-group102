@@ -37,7 +37,7 @@ function register(event) {
     })
     .then((data) => {
       console.log(data);
-      alert("Registration Successful")
+      alert("Successfully Registered")
       // showPopup("Registration successful")
     })
     .catch((error) => {
