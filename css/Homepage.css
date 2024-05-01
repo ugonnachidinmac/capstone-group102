@@ -720,9 +720,8 @@ hr {
     display: block;
   }
   .nav {
-    width: 393px;
-    height: 34px;
-    padding: 10px 20px;
+      width: 50%;
+      padding: 3px 20px 8px 20px;
   }
   .nav-menu ul li .link {
     margin-left: 3px;
@@ -783,8 +782,8 @@ hr {
   .section1 {
     background-size: cover;
     background-position: center;
-    width: 720px;
-    height: 700px;
+    width: 7393px;
+    height: 570px;
   }
   .section1 .welcome {
     font-size: 45px;
