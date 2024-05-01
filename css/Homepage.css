@@ -350,7 +350,7 @@ hr {
   margin: 0;
 }
 .info-head {
-  font-size: 22px;
+  font-size: 10px;
   font-weight: 700;
   margin-top: 10px;
   margin-left: 10px;
@@ -359,8 +359,8 @@ hr {
   text-align: left;
 }
 .info {
-  font-size: 15.09px;
-  font-weight: 400;
+  font-size: 4px;
+  font-weight: 100;
   padding-left: 10px;
   margin-left: 10px;
   margin-top: 5px;
@@ -720,8 +720,14 @@ hr {
     display: block;
   }
   .nav {
-      width: 50%;
+      width: 600px;
       padding: 3px 20px 8px 20px;
+  }
+  .nav-logo img {
+    display: block;
+    width: 115px;
+    height: 33px;
+    margin-left: 20px;
   }
   .nav-menu ul li .link {
     margin-left: 3px;
@@ -905,16 +911,16 @@ hr {
     width: 500px;
   }
   .image-text {
-    width: 270px;
-    height: 430px;
+    width: 220px;
+    height: 280px;
   }
   .image-text .offer-image1 {
-    width: 240px;
-    height: 260px;
+    width: 180px;
+    height: 116px;
   }
   .image-text .offer-image2 {
-    width: 260px;
-    height: 260px;
+    width: 180px;
+    height: 116px;
   }
   .image-text .info {
     width: 240px;
