@@ -714,12 +714,14 @@ hr {
 
 
 /* Responsiveness */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   .hamburger,
   .toggle-menu {
     display: block;
   }
   .nav {
+    width: 393px;
+    height: 34px;
     padding: 10px 20px;
   }
   .nav-menu ul li .link {
@@ -763,6 +765,10 @@ hr {
   .evalope {
     display: inline-block;
     padding-right: 5px;
+  }
+  .nav-logo{
+    width: 115.14px;
+    height: 30px;
   }
   .hideout {
     display: block;
