@@ -992,3 +992,248 @@ hr {
     padding-bottom: 0;
   }
 } */
+
+@media screen and (max-width: 768px){
+  .hamburger,
+  .toggle-menu{
+      display: block;
+  }
+  .nav{
+      padding: 10px 20px;
+  }
+  .nav-menu ul li .link {
+      margin-left: 3px;
+  }
+  .menu,
+  .nav-button{
+      justify-content: start;
+      flex-direction: column;
+      align-items: center;
+      position: fixed; 
+      top: 0;
+      right: -300px;
+      background: rgb(25, 84, 0);
+      width: 200px;
+      height: 600px;
+      border-top-left-radius: 20px;   
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding-top: 100px;
+  }
+  .menu li{
+      width: 100%;
+      padding-bottom: 40px;
+  }
+  .nav-menu ul li .link {
+      color: rgb(241, 201, 40);
+  }
+  .nav-menu ul li {
+      padding-bottom: 70px;
+  }
+  .menu li a,
+  .menu li a:hover{
+      padding: 30px;
+      width: 200px;
+      font-size: 18px;
+      box-shadow: 0 1px 0 rgba(246, 199, 11, 0.848) inset;
+      border-bottom: none;
+      outline: none;
+  }
+  .evalope{
+      display: inline-block;
+      padding-right: 5px;
+      
+  }
+  .hideout{
+      display: block;
+  }
+  i .evalope img{
+      display: inline-block;
+      padding-right: 5px;
+      padding-top: 150px;
+      position: relative;
+      top: -50px;
+  }
+  .section1 {
+      background-size: cover;
+      background-position: center;
+      width: 600px;
+      height: 600px;
+  }
+ .section1 .welcome {
+      font-size: 43px;
+      font-weight: bold;
+      width: 500px;
+      padding: 120px 20px 90px 30px;
+      text-align: left;
+  }
+  .colorb{
+      width: 720px;
+      height: 330px;
+      background-color: rgb(25, 84, 0);
+      padding: 20px 20px 20px 15px;
+      margin-bottom: 90px;
+      margin-top: 20px;
+  }
+  .colorb .mission{
+      font-size: 14px;
+      font-weight: normal; 
+      color: rgb(255, 255, 255);
+      width: 500px;
+      padding: 0 30px 15px 30px;
+      text-align: left;
+      line-height: 1.4;
+  } 
+  .colorb .get-started{
+      padding: 0 20px 15px 30px;
+  } 
+  section .about-para{
+      margin-top: 0;
+  }
+  .sectiion-about2{
+      width: 500px;
+      height: 970px;
+  }
+  section .about-para h3{
+     margin-bottom: 10px;
+  }
+  .about-content{
+      width: 900px;
+      height: 980px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      margin-bottom: 70px;
+      padding: 10px 20px 15px 50px;
+  }
+  .about-content,
+  .about-heading{
+      padding-left: 80px;
+      padding-top: 5px;
+  }
+  .section-about .about-heading{
+      margin-top: 60px;
+      margin-bottom: 0;
+      padding-bottom: 10px;
+      font-size: 45px;
+      font-weight: 700;
+  }
+  .about-heading p{
+      margin-top: 20px;
+      
+  }
+  .about-image img{
+      width: 450px;
+      height: 450px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+  }
+  .about-para h3{
+      width: 600px;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-right: 70px;
+      font-size: 32px;
+      font-weight: bold;
+  }
+  .about-para-one{
+      width: 600px;
+      padding-bottom: 10px;
+      font-size: 18px;
+      font-weight: normal;
+      padding-right: 70px;
+      line-height: 1.4;
+  }
+  .about-para-two{
+      width: 600px;
+      margin-bottom: 15px;
+      padding-bottom: 20px;
+      font-size: 18px;
+      font-weight: normal;
+      padding-right: 70px;
+      line-height: 1.4;
+  }
+  .learn-more{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: rgb(241, 201, 40);
+      font-weight: 500;
+      padding: 10px 10px; 
+      border: 2px solid rgb(241, 201, 40);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 22px;
+      width: 202px;
+      height: 60px;
+  }
+  .section-offer{
+      width: 700px;
+      height: 730px;
+      padding: 0 20px 0 50px;
+  }
+  .section-offer .offer .offer-head{
+      margin-top: 20px;
+  }
+  .offer-para{
+      width: 550px;
+  }
+  .offer-image-container{
+      width: 500px;
+  }
+  .image-text{
+      width: 270px;
+      height: 430px;
+  }
+  .image-text .offer-image1{
+      width: 240px;
+      height: 260px;
+  }
+  .image-text .offer-image2{
+      width: 260px;
+      height: 260px;
+  }
+  .image-text .info{
+      width: 240px;
+  }
+  .info{
+      width: 200px;
+      font-size: 8px;
+  }
+   .section-footer .footer{
+      width: 700px;
+      height: 250px; 
+  } 
+  .footer-logo-p img{
+      width: 150px;
+  }
+  .footer-content2 .displaynot h5{
+      width: 120px;
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      color: white;
+      margin-bottom: 30px;
+  }
+  .footer-content .list h5{
+     display: none;
+  }
+  .footer-content .the-list li{
+     display: none;
+  }
+  .footer-content2 .the-lists li{
+      display: block;
+      font-size: 14px;
+      font-weight: normal;
+      list-style: none;
+      color: white;
+      line-height: 1.5;
+   }
+   .logo-image{
+      background-color: white; 
+      width: 100px;
+  }
+   .logo-image-text{
+      font-size: 9px;
+      line-height: 1.5;
+  }
+}
