@@ -212,17 +212,20 @@ body {
   text-align: left;
   line-height: 1.4;
 }
-.get-started button {
+.getStartedBtn{
   margin-top: 5px;
-  background-color: rgb(241, 201, 40);
-  font-weight: 500;
-  padding: 10px 20px;
-  border: 2px solid rgb(241, 201, 40);
+  /* background-color: rgb(241, 201, 40);  */
+  padding: 20px 20px;
+  /* border: 2px solid rgb(241, 201, 40);  */
   border-radius: 8px;
+  width: 202px; 
+  height: 60px;
+}
+.getStarteda{
+  color: black;
   font-weight: 600;
   font-size: 22px;
-  width: 202px;
-  height: 60px;
+
 }
 .get-started {
   padding: 0 20px 15px 110px;
@@ -474,6 +477,10 @@ hr {
   color: rgb(46, 153, 0);
   padding: 70px 20px 0 110px;
 }
+.cart{
+  margin-top: 20px;
+  margin-right: 20px;
+}
 
 .most {
   width: 1500px;
@@ -485,7 +492,7 @@ hr {
   color: black;
   font-size: 32px;
   font-weight: 700px;
-  margin-right: 920px;
+  margin-right: 400px;
 }
 .most div:nth-child(2) {
   display: flex;

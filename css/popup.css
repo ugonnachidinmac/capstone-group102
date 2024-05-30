@@ -73,7 +73,7 @@ button{
     font-weight: 900;
     border: none;
     cursor: pointer;
-}
+} 
 button:hover{
     background-color: rgba(243, 193, 10, 0.549);
 }
