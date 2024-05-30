@@ -481,9 +481,46 @@ hr {
   margin-top: 20px;
   margin-right: 20px;
 }
-
+.filter{
+  background-color: transparent;
+  margin: 0;
+  /* border: 1px solid rgb(241, 201, 40);  */
+  width: 60px;
+  height: 45px;
+  margin-top: -8px;
+}
+.filterContainer{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(241, 201, 40);
+  position: absolute;
+  top: 250px;
+  width: 98px;
+  height: 40px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin-top: -70px;
+}
+.search{
+  width: 440px;
+  height: 40px;
+  border: 1px solid #979797;
+  display: flex;
+  flex-direction: row;
+  margin-top: -43px;
+  border-radius: 8px;
+}
+.searchInput{
+  border: none;
+  font: 14px;
+  font-weight: 400;
+}
+.imgSearch{
+  margin-left: 10px;
+  margin-top: 7px;
+}
 .most {
-  width: 1500px;
+  width: 1440px;
   display: flex;
   flex-direction: row;
   padding: 5px 20px 30px 110px;
