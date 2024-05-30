@@ -90,9 +90,28 @@ loginButton.addEventListener("click", login);
 
 
 
+// store table 
+function addProduct(event){
+  event.preventDefault(); // Prevent form submission
 
+  var texts1 = document.getElementById('text1').value;
+  var texts2 = document.getElementById('text2').value;
+  var texts3 = document.getElementById('text3').value;
+  var date = new Date().toDateString();
 
+  var table = document.getElementById('productTable').getElementsByTagName('tbody')[0];
+  var row = table.insertRow();
 
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  var cell4 = row.insertCell(3);
+  
+  cell1.innerHTML = texts1;
+  cell2.innerHTML = texts2;
+  cell3.innerHTML = texts3;
+  cell4.innerHTML = date;
+}
 
 /*document.getElementById("formsignup").addEventListener("submit", function(event)
 {

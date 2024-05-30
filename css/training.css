@@ -748,7 +748,9 @@ aside{
     margin-right: 710px;
     border-radius: 8px;
 }
-
+.imageUpdate{
+    width: 10px;
+}
 /* .left-headerstore div:nth-child(1){
     background-color: #EFF0F3;
     width: 45px;

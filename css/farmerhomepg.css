@@ -3,7 +3,7 @@
 body {
     font-family: 'Inter', sans-serif; 
     background-color: rgb(234, 245, 230);
-    height: 1100px;
+    height: 1900px;
     width: 100vh;
     margin: 0;
 }
@@ -543,4 +543,92 @@ hr{
     /* margin-bottom: 10px; Example margin */
     margin-top: 60px;
     margin-left: -5px;
+}
+.form-container2{
+    background-color: white;
+    margin-left: 0;
+}
+.subscriptionBox{
+    position: absolute;
+    left: 380px;
+    width: 1032px;
+    height: 1000px;
+    background-color: transparent;
+    
+    /* padding-left: 270px; */
+}
+.subscriptionInnerBox>h2{
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.subscriptionInnerBox>hr{
+    border: 1px solid #00000026;
+}
+.pBold{
+    font-size: 14px;
+    font-weight: 600;
+}
+.subPara{
+    font-size: 13px;
+    font-weight: 400; 
+    
+    
+}
+.update{
+    width: 98px;
+    height: 37px;
+    border: 2px solid #F1C928;
+    color: #F1C928;
+    border-radius: 8px;
+    background-color: transparent;
+}
+.subDiv2{
+    margin-top: 50px;
+}
+
+.subscriptionInnerBox{
+    background-color: white;
+    padding-left: 270px;
+    padding-top: 20px;
+    height: 400px;
+}
+.subscriptionInnerBox2{
+    background-color: white;
+    padding-left: 270px;
+    padding-top: 20px;
+    height: 400px;
+    margin-top: 25px;
+}
+.control{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.controlImg{
+    width: 40.59px;
+    height: 20.29px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.controlSep{
+    margin-top: 35px;
+}
+.passMgt{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+ 
+}
+.controlBtn{
+    width: 154px;
+    height: 37px;
+    margin-left: 200px;
+    margin-top: 20px;
+    background-color: #F1C928;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
 }

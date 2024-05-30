@@ -71,6 +71,7 @@
                         <!-- Table Header Row -->
                         <tr>
                             <th class="square-box"><input type="checkbox" class="checkbox"></th>
+                            <th>image</th>
                             <th>Products</th>
                             <th>Price</th>
                             <th>Date Added</th>
@@ -81,11 +82,11 @@
                         
                         <!-- First Data Row -->
                         <tr class="row" id="row1">
-                            <td><input type="checkbox" class="checkbox"></td>
+                            <td><input type="checkbox" name="check" class="checkbox"></td>
                             <td>
-                                <img src="../image/storeimg1.png" alt="">
-                                <p>Fresh Tomato</p>
+                                <img src="../image/storeimg1.png" alt="" >
                             </td>
+                            <td>Fresh Tomato</td>
                             <td># 5,000</td>
                             <td>29 December 2022</td>
                             <td># 35,000</td>
@@ -96,11 +97,11 @@
                             </td>
                         </tr>
                         <tr class="row" id="row2">
-                            <td><input type="checkbox" class="checkbox"></td>
+                            <td><input type="checkbox" name="check" class="checkbox"></td>
                             <td>
                                 <img src="../image/storeimg2.png" alt="">
-                                <p>Lettuce</p>
                             </td>
+                            <td>Lettuce</td>
                             <td># 5,000</td>
                             <td>29 December 2022</td>
                             <td># 5,000</td>
@@ -112,11 +113,11 @@
                         </tr>
 
                         <tr class="row" id="row3">
-                            <td><input type="checkbox" class="checkbox"></td>
+                            <td><input type="checkbox" name="check" class="checkbox"></td>
                             <td>
                                 <img src="../image/storeimg3.png" alt="">
-                                <p>Brocolli</p>
                             </td>
+                            <td>Brocolli</td>
                             <td># 5,000</td>
                             <td>29 December 2022</td>
                             <td># 50,000</td>
@@ -136,6 +137,7 @@
   
 
     <!-- to register new product -->
+    <form>
     <div class="container-upload" id="popupx">
         <div class="close" onclick="togglex()">X</div>
             <h2>Upload New Product</h2>
@@ -153,18 +155,19 @@
             <div>
                 <h2>General Information</h2>
                 <p>Product Name</p> 
-                <input type="text" name="" id="" placeholder="Type product name here. . .">
+                <input type="text" name="" id="text1" placeholder="Type product name here. . .">
                 <p>Description</p> 
-                <input type="text" name="" id="" placeholder="Type product description here. . .">
+                <input type="text" name="" id="text2" placeholder="Type product description here. . .">
                 <label for="">Price</label>
-                <input type="text" name="" id="" placeholder="$ Type price here. . .">
+                <input type="text" name="" id="text3" placeholder="$ Type price here. . .">
             </div>
             <div class="button-option">
                 <button>X Cancel</button>
-                <button>+ Add Product</button>
+                <button onclick="addProduct()">+ Add Product</button>
             </div>
                           
         </div>
+    </form>
     
         <!-- Data upload code 
         <div class="container-upload" id="popupx">
@@ -245,18 +248,18 @@
         //     myIcon.style.color = '';
         // });
 
-        //delete
+//         delete
         
-//         document.querySelector('table').addEventListener('click', function(event) {
-//   // Check if the clicked element is the "deleteicons" image
-//   if (event.target.classList.contains('delete-icon')) {
-//     // Find the closest parent <tr> element and remove it
-//     let row = event.target.closest('tr');
+//        document.querySelector('table').addEventListener('click', function(event) {
+//         // Check if the clicked element is the "deleteicons" image
+//           if (event.target.classList.contains('delete-icon')) {
+//         // Find the closest parent <tr> element and remove it
+//          let row = event.target.closest('tr');
 //     if (row) {
-//       row.remove();
+//        row.remove();
 //     }
 //   }
-// });
+//  });
     </script>
 </body>
 </html>
