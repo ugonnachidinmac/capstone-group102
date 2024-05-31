@@ -41,13 +41,14 @@ body {
   background: rgb(255, 255, 255);
   padding: 5px 25px 10px 25px;
   transition: 0.3s;
+  z-index: 1000;
 }
 
 .nav-logo img {
   display: block;
   width: 196.87px;
   height: 56.71px;
-  margin-left: 20px;
+  margin-left: 80px;
 }
 .nav-menu ul,
 .navigation {
@@ -63,7 +64,18 @@ body {
   z-index: 1;
   transition: 0.5s;
 }
-
+.mktMenu{
+  margin-top: 45px;
+}
+.mktSearchBtn{
+  width: 120px;
+  height: 40px;
+  background-color:  #F1C928;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: -15px;
+  margin-left: -50px;
+}
 .nav-menu ul li {
   margin: 0 20px;
   padding-right: 55px;
@@ -477,17 +489,38 @@ hr {
   color: rgb(46, 153, 0);
   padding: 70px 20px 0 110px;
 }
-.cart{
-  margin-top: 20px;
-  margin-right: 20px;
+.cart, .profilemkt{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
-.filter{
+.cart span, .profilemkt span{
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.cartProfile{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.filterGrey{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: #727A90;
+  font-size: 14px;
+  font-weight: 500;
   background-color: transparent;
   margin: 0;
-  /* border: 1px solid rgb(241, 201, 40);  */
-  width: 60px;
-  height: 45px;
+  border: 0.5px solid #727A90;  
+  width: 98px;
+  height: 40px;
+  padding-left: 10px;
   margin-top: -8px;
+}
+.filterGrey span{
+  margin-top: 5px;
 }
 .filterContainer{
   display: flex;
@@ -508,16 +541,23 @@ hr {
   display: flex;
   flex-direction: row;
   margin-top: -43px;
+  margin-right: 80px;
   border-radius: 8px;
 }
 .searchInput{
   border: none;
   font: 14px;
   font-weight: 400;
+  padding-left: 25px;
+}
+.searchInput:focus{
+  outline: none;
 }
 .imgSearch{
   margin-left: 10px;
   margin-top: 7px;
+  width: 20px;
+  height: 20px;
 }
 .most {
   width: 1440px;
@@ -529,7 +569,7 @@ hr {
   color: black;
   font-size: 32px;
   font-weight: 700px;
-  margin-right: 400px;
+  margin-right: 900px;
 }
 .most div:nth-child(2) {
   display: flex;
@@ -648,6 +688,12 @@ hr {
   visibility: visible;
   opacity: 1;
   transform: 0.5;
+}
+.section{
+  padding-top: 70px;
+}
+.rating{
+  z-index: 1;
 }
 
 /* onboarding css */

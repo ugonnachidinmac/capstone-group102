@@ -16,22 +16,23 @@
             <div class="nav-menu navigation" id="navMenu">
                 <input type="checkbox" class="toggle-menu">
                 <div class="hamburger"></div>
-                <ul class="menu">
-                    <li><a href="../index.html" class="link"> <i class="evalope"><img src="../image/Home.png" alt=""></i>Home</a></li>
-                    <li><a href="../index.html" class="link"><i class="evalope"><img src="../image/aboutus.png" alt=""></i>About Us</a></li>
-                    <li><a href="../html/marketplc.html" class="link"><i class="evalope"><img src="../image/aboutus.png" alt=""></i>Products</a></li>
-                    <li><a href="../html/contactuspg.html" class="link"><i class="evalope"><img src="../image/Phonehandle.png" alt=""></i>Contact Us</a></li>
-                    <li><a href="#market-plc" class="link"><i class="evalope"><img src="../image/market.png" alt=""></i>Market Place</a></li> 
-                    <li><a href="../index.html" onclick="togglee()" class="link hideout"><i class="evalope"><img src="../image/Login.png" alt=""></i>Sign Up</a></li> 
-                    <li><a href="../index.html" onclick="martoggle()" class="link hideout"><i class="evalope"><img src="../image/SignIn.png" alt=""></i>Log In</a></li> 
+                <ul class="menu mktMenu">
+                    <div class="search">
+                        <img src="../image/searchmkt.png" alt="" class="imgSearch">
+                        <input type="text" class="searchInput" placeholder="Search products and manufacturers...">
+                    </div>
+                    <button class="mktSearchBtn">Search</button>
                 </ul>
             </div>
-            <div class="nav-button">
+            <div class="nav-button cartProfile">
                 <div class="cart">
-                    <img src="../image/cart.png" alt="">
+                    <span>Cart</span>
+                    <img src="../image/carticon.png" alt="">
                 </div>
-          
-                <button class="btn"><a href="../index.html" onclick="togglee()">Sign Up</a></button>
+                <div class="profilemkt">
+                    <span>Account</span>
+                    <img src="../image/profilemkt.png" alt="">
+                </div>
             </div>
     </header> 
 
@@ -55,18 +56,11 @@
         </div>
         <div class="most">
             <h2>Most Popular</h2>
-           <div>
-           <div class="search">
-            <img src="../image/search2.png" alt="" class="imgSearch">
-            <input type="text" class="searchInput" placeholder="Search products and manufacturers...">
-           </div>
-           <div class="filterContainer" >
-            <img src="../image/filter.png" alt="">
-            <button class="filter">Filters</button>
-           </div>
-           </div>
+          <div>
+            <button class="filterGrey"><img src="../image/filtergrey.png" alt=""><span>Filter</span></button>
+          </div>
         </div>
-    <div class="displayout">
+    <div class="displayout" >
         <div class="displayout1">
                 <div class="cards">
                     <img src="../image/marketplcimg1.png" alt="">
@@ -83,7 +77,7 @@
                         <img src="../image/stars.png" alt="">
                         <img src="../image/stars.png" alt="">
                         <img src="../image/star-gray.png" alt="">
-                        <p>(131)</p>
+                        <p class="rating">(131)</p>
                     </div>
                     <div class="action-button">
                         <div>Add to Cart</div>
@@ -107,7 +101,7 @@
                     <img src="../image/stars.png" alt="">
                     <img src="../image/stars.png" alt="">
                     <img src="../image/star-gray.png" alt="">
-                    <p>(131)</p>
+                    <p class="rating">(131)</p>
                 </div>
                 <div class="action-button">
                     <div>Add to Cart</div>
@@ -131,7 +125,7 @@
                 <img src="../image/stars.png" alt="">
                 <img src="../image/stars.png" alt="">
                 <img src="../image/star-gray.png" alt="">
-                <p>(131)</p>
+                <p class="rating">(131)</p>
             </div>
             <div class="action-button">
                 <div>Add to Cart</div>
@@ -165,7 +159,7 @@
                     <img src="../image/stars.png" alt="">
                     <img src="../image/stars.png" alt="">
                     <img src="../image/star-gray.png" alt="">
-                    <p>(131)</p>
+                    <p class="rating">(131)</p>
                 </div>
                 <div class="action-button">
                     <div>Add to Cart</div>
@@ -189,7 +183,7 @@
                 <img src="../image/stars.png" alt="">
                 <img src="../image/stars.png" alt="">
                 <img src="../image/star-gray.png" alt="">
-                <p>(131)</p>
+                <p class="rating">(131)</p>
             </div>
             <div class="action-button">
                 <div>Add to Cart</div>
@@ -213,7 +207,7 @@
             <img src="../image/stars.png" alt="">
             <img src="../image/stars.png" alt="">
             <img src="../image/star-gray.png" alt="">
-            <p>(131)</p>
+            <p class="rating">(131)</p>
         </div>
         <div class="action-button">
             <div>Add to Cart</div>
@@ -264,7 +258,6 @@
                         <li>FAQs</li>
                         <li>Terms of service</li>
                         <li>Privacy Policy</li>
-                        <a href="#about-heading"><li>About Us</li></a>
                         <li>Social Media handle</li>
                         <li>Blog</li>
                     </ul>
@@ -272,19 +265,17 @@
                 <div  class="list">
                     <h5>Navigation</h5>
                     <ul class="the-list">
-                        <a href="#welcome"><li>Home</li></a>
+                        <a href="../index.html"><li>Home</li></a>
                         <a href="#about-heading"><li>About Us</li></a>
-                        <a href="#about-heading"><li>Products</li></a>
-                        <a href="#about-heading"><li>Contact Us</li></a>
-                        <li>Market Place</li>
+                        <a href="../index.html"><li>Products</li></a>
                     </ul>
                 </div>
                 <div  class="list">
                     <h5>Contact Us</h5>
                     <ul class="the-list">
-                        <li>Email</li>
-                        <li>Phone No.:</li>
-                        <li>Adress</li>
+                        <li>Email: Uphaqar@gmail.com</li>
+                        <li>Phone No.: +234 08067752004</li>
+                        <li>Address: Lagos, Nigeria</li>
                     </ul>
                 </div>
             </div>
