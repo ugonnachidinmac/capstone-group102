@@ -1,273 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="../css/Homepage.css">
-    <link rel="stylesheet" href="../css/popup.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/Homepage.css" />
+    <link rel="stylesheet" href="../css/popup.css" />
+    <link rel="icon" href="./image/logo capstone.jpg" type="image/x-icon" />
+  </head>
+  <body>
     <div id="blur">
-    <header class="nav">
-            <div class="nav-logo">
-                <img src="../image/logo.png" alt="logo image">
-            </div>
-            <div class="nav-menu navigation" id="navMenu">
-                <input type="checkbox" class="toggle-menu">
-                <div class="hamburger"></div>
-                <ul class="menu">
-                    <li><a href="../index.html" class="link"> <i class="evalope"><img src="../image/Home.png" alt=""></i>Home</a></li>
-                    <li><a href="#about-heading" class="link"><i class="evalope"><img src="../image/aboutus.png" alt=""></i>About Us</a></li>
-                    <li><a href="#service" class="link"><i class="evalope"><img src="../image/aboutus.png" alt=""></i>Products</a></li>
-                    <li><a href="html\contactuspg.html" class="link"><i class="evalope"><img src="../image/Phonehandle.png" alt=""></i>Contact Us</a></li>
-                    <li><a href="html\marketplc.html" class="link"><i class="evalope"><img src="../image/market.png" alt=""></i>Market Place</a></li> 
-                    <li><a href="#" onclick="togglee()" class="link hideout"><i class="evalope"><img src="../image/Login.png" alt=""></i>Sign Up</a></li> 
-                    <li><a href="#" onclick="toggle()" class="link hideout"><i class="evalope"><img src="../image/SignIn.png" alt=""></i>Log In</a></li> 
-                </ul>
-            </div>
-            <div class="nav-button">
-                <button class="btn"><a href="#" onclick="toggle()">Login</a></button>
-          
-                <button class="btn"><a href="#" onclick="togglee()">Sign Up</a></button>
-            </div>
-    </header> 
+      <header class="nav">
+        <div class="nav-logo">
+          <img src="../image/logo.png" alt="logo image" />
+        </div>
+        <div class="nav-menu navigation" id="navMenu">
+          <input type="checkbox" class="toggle-menu" />
+          <div class="hamburger"></div>
+          <ul class="menu">
+            <li>
+              <a href="../index.html" class="link">
+                <i class="evalope"><img src="../image/Home.png" alt="" /></i
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#about-heading" class="link"
+                ><i class="evalope"><img src="../image/aboutus.png" alt="" /></i
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="#service" class="link"
+                ><i class="evalope"><img src="../image/aboutus.png" alt="" /></i
+                >Products</a
+              >
+            </li>
+            <li>
+              <a href="html\contactuspg.html" class="link"
+                ><i class="evalope"
+                  ><img src="../image/Phonehandle.png" alt="" /></i
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="html\marketplc.html" class="link"
+                ><i class="evalope"><img src="../image/market.png" alt="" /></i
+                >Market Place</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="togglee()" class="link hideout"
+                ><i class="evalope"><img src="../image/Login.png" alt="" /></i
+                >Sign Up</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="toggle()" class="link hideout"
+                ><i class="evalope"><img src="../image/SignIn.png" alt="" /></i
+                >Log In</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <button class="btn"><a href="#" onclick="toggle()">Login</a></button>
 
-    <section class="section1" style="background-image: image-set(url('../image/welcomebackgrounimage.png'));">
+          <button class="btn">
+            <a href="#" onclick="togglee()">Sign Up</a>
+          </button>
+        </div>
+      </header>
+
+      <section
+        class="section1"
+        style="
+          background-image: image-set(
+            url('../image/welcomebackgrounimage.png')
+          );
+        "
+      >
         <div class="firstp">
-            <p class="welcome" id="welcome">Welcome to <span style="color: rgb(248, 200, 9);">AgritechLink</span> Your Gateway to Sustainable Agriculture and Market Place!
-            </p>
-            <div class="colorb">
+          <p class="welcome" id="welcome">
+            Welcome to
+            <span style="color: rgb(248, 200, 9)">AgritechLink</span> Your
+            Gateway to Sustainable Agriculture and Market Place!
+          </p>
+          <div class="colorb">
             <p class="mission">
-                At AgritechLink, we're on a mission to revolutionize farming and reshape the future of agriculture. Whether you're a farmer, partner, visitor, or buyer, you're part of our vibrant community dedicated to driving positive change in the agricultural industry.
-                Explore our platform to discover our innovative farm solution, access high-quality farm products, and connect with like-minded individuals and businesses committed to sustainability and growth. Together, let's cultivate a brighter future for agriculture and our planet.
-            </p> 
+              At AgritechLink, we're on a mission to revolutionize farming and
+              reshape the future of agriculture. Whether you're a farmer,
+              partner, visitor, or buyer, you're part of our vibrant community
+              dedicated to driving positive change in the agricultural industry.
+              Explore our platform to discover our innovative farm solution,
+              access high-quality farm products, and connect with like-minded
+              individuals and businesses committed to sustainability and growth.
+              Together, let's cultivate a brighter future for agriculture and
+              our planet.
+            </p>
             <div class="get-started">
-                <button class="getStartedBtn" ><a href="#" onclick="togglee()" class="getStarteda">Get started</a></button>  
-                </div>
-            </div>   
+              <button class="getStartedBtn">
+                <a href="#" onclick="togglee()" class="getStarteda"
+                  >Get started</a
+                >
+              </button>
+            </div>
+          </div>
         </div>
-    </section>
-    <section class="section-about">
+      </section>
+      <section class="section-about">
         <div class="about-heading" id="about-heading">
-            <p>About Us</p>
+          <p>About Us</p>
         </div>
-    </section>
-    <section class="sectiion-about2">
+      </section>
+      <section class="sectiion-about2">
         <div class="about-content">
-            <div class="about-image">
-                <img src="../image/about.png" alt="pic">
-            </div>
-            <div class="about-para">
-                <h3>Unlocking Sustainable Agriculture with Agritecture</h3>
-                <p class="about-para-one">
-                    At Agritecture, we're pioneering the future of farming with innovative solutions that empower farmers and protect our planet. Our platform, products, and services are designed to address the challenges of today while laying the groundwork for a sustainable tomorrow.
+          <div class="about-image">
+            <img src="../image/about.png" alt="pic" />
+          </div>
+          <div class="about-para">
+            <h3>Unlocking Sustainable Agriculture with Agritecture</h3>
+            <p class="about-para-one">
+              At Agritecture, we're pioneering the future of farming with
+              innovative solutions that empower farmers and protect our planet.
+              Our platform, products, and services are designed to address the
+              challenges of today while laying the groundwork for a sustainable
+              tomorrow.
+            </p>
 
-                </p>
-            
-                <p class="about-para-two">
-                    However, at AgritechLink, we're committed to overcoming these obstacles through continuous innovation and collaboration. By investing in research and development, we're streamlining our processes and making our solutions more accessible and adaptable to farmers of all scales.
-                </p>
-                <button class="learn-more">Learn More</button>
-            </div>
+            <p class="about-para-two">
+              However, at AgritechLink, we're committed to overcoming these
+              obstacles through continuous innovation and collaboration. By
+              investing in research and development, we're streamlining our
+              processes and making our solutions more accessible and adaptable
+              to farmers of all scales.
+            </p>
+            <button class="learn-more">Learn More</button>
+          </div>
         </div>
-    </section>
-    <hr id="service">
-    <section class="section-offer" id="offer-heading">
+      </section>
+      <hr id="service" />
+      <section class="section-offer" id="offer-heading">
         <div class="offer">
-            <p class="offer-head" id="offer-display"> What we offer</p>
+          <p class="offer-head" id="offer-display">What we offer</p>
 
-            <p class="offer-para">At Agritechlink we provide the innovative Agritecture model, a pioneering solution featuring a pyramid-shaped structure and energy pallets. This innovative approach revolutionizes conventional farming by maximizing natural sunlight, minimizing energy consumption, and integrating agroforestry techniques.</p>
+          <p class="offer-para">
+            At Agritechlink we provide the innovative Agritecture model, a
+            pioneering solution featuring a pyramid-shaped structure and energy
+            pallets. This innovative approach revolutionizes conventional
+            farming by maximizing natural sunlight, minimizing energy
+            consumption, and integrating agroforestry techniques.
+          </p>
         </div>
         <div class="offer-image-container">
-            <div class="image-text">
-                <img src="../image/offerimage1.png" alt="pic" class="offer-image1">
-                <div class="info-container">
-                    <p class="info-head">
-                        Agriculture Farming Model
-                    </p>
-                    <p class="info">
-                        An agriculture farming model refers to the strategic framework and approach used by farmers to cultivate crops and raise livestock efficiently. It encompasses various aspects such as crop selection, land preparation, planting techniques, irrigation methods, and pest control strategies to maximize productivity and sustainability.
-    
-                    </p>
-                </div>    
-            </div>
+          <div class="image-text">
+            <img
+              src="./image/whatweoffer-newimage.svg"
+              alt="pic"
+              class="offer-image1"
+            />
             <div class="info-container">
+              <p class="info-head">Agriculture Farming Model</p>
+              <p class="info">
+                We are designing a suspended agritecture in the shape of a
+                pyramid, featuring energy pallets with curved forms made of
+                glassy black steel for heat retention. These pallets serve as
+                sun trackers and mirrors, directing natural sunlight into the
+                building's six layered structure. Each layer measures 379.7
+                feet, with proportions calculated according to the prototype. In
+                the middle of the building, there's a spiraled transport track
+                system, resembling a train rack, along with an elevator system,
+                to facilitate movement due to the building's length. The steel
+                structure is painted glassy black to retain heat, accommodating
+                soil technology for growing industrial crops. Hydro turbines are
+                incorporated to generate energy for the building's consumption.
+              </p>
+            </div>
+          </div>
+          <div class="info-container">
             <div class="image-text">
-                <img src="../image/offerimage2.png" class="offer-image2">
-                <p class="info-head">
-                    Precision Farming
-                </p>
-                <p class="info">
-                    Precision farming involves using technology and data-driven methods to optimize agricultural practices at a highly detailed and accurate level. By utilizing tools like GPS, sensors, drones, and automated machinery, precision farming enables farmers to make informed decisions in real-time regarding planting, fertilizing, irrigation, and pest management to enhance yields, minimize waste, and protect the environment.
-                </p>
+              <img src="../image/offerimage2.png" class="offer-image2" />
+              <p class="info-head">Precision Farming</p>
+              <p class="info">
+                Our Precision Farming solution is a game-changer in modern
+                agriculture, leveraging advanced technology and data-driven
+                insights to optimize crop production, reduce resource wastage,
+                and increase profitability. By integrating sensors, drones,
+                satellite imagery, and AI-powered analytics, Precision Farming
+                enables farmers to make informed decisions tailored to the
+                specific needs of their crops and land. From precise irrigation
+                and fertilization to targeted pest management and yield
+                forecasting, this innovative solution empowers farmers to
+                maximize output while minimizing environmental impact. Join us
+                in shaping the future of agriculture through Precision Farming
+                on AgritechLink.
+              </p>
             </div>
-            </div>
+          </div>
         </div>
-    </section>
-    <section class="section-footer" id="market">
+      </section>
+      <section class="section-footer" id="market">
         <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-content2">
-                    <div class="footer-logo-p">
-                        <img src="../image/logo.png" alt="logo" class="logo-image">
-                        <p class="logo-image-text">
-                            We're on a mission to <br>
-                            revolutionize farming and <br>
-                            reshape the future of agriculture.      
-                        </p>
-                    </div>
-                    <div  class="displaynot">
-                        <h5>Navigation</h5>
-                        <ul class="the-lists">
-                            <li>FAQS</li>
-                            <a href="#about-heading"><li>About Us</li></a>
-                            <li>Products</li>
-                        </ul>
-                    </div>
-                    <div  class="displaynot">
-                        <h5>Contact Us</h5>
-                        <ul class="the-lists">
-                            <li>Email</li>
-                            <li>Phone No.:</li>
-                            <li>Adress</li>
-                        </ul>
-                    </div>
-                 </div>
-                <div class="list">
-                    <h5>Navigation</h5>
-                    <ul class="the-list">
-                        <li>FAQs</li>
-                        <li>Terms of service</li>
-                        <li>Privacy Policy</li>
-                        <li>Social Media handle</li>
-                        <li>Blog</li>
-                    </ul>
-                </div>
-                <div  class="list">
-                    <h5>Navigation</h5>
-                    <ul class="the-list">
-                        <a href="#welcome"><li>Home</li></a>
-                        <a href="#about-heading"><li>About Us</li></a>   
-                        <a href="#service"><li>Products</li></a>
-                        <a href="html\marketplc.html"><li>Market Place</li></a>
-                    </ul>
-                </div>
-                <div  class="list">
-                    <h5>Contact Us</h5>
-                    <ul class="the-list">
-                        <li>Email: Uphaqar@gmail.com</li>
-                        <li>Phone No.: +234 08067752004</li>
-                        <li>Address: Lagos, Nigeria</li>
-                    </ul>
-                </div>
+          <div class="footer-content">
+            <div class="footer-content2">
+              <div class="footer-logo-p">
+                <img src="../image/logo.png" alt="logo" class="logo-image" />
+                <p class="logo-image-text">
+                  We're on a mission to <br />
+                  revolutionize farming and <br />
+                  reshape the future of agriculture.
+                </p>
+              </div>
+              <div class="displaynot">
+                <h5>Navigation</h5>
+                <ul class="the-lists">
+                  <li>FAQS</li>
+                  <a href="#about-heading"><li>About Us</li></a>
+                  <li>Products</li>
+                </ul>
+              </div>
+              <div class="displaynot">
+                <h5>Contact Us</h5>
+                <ul class="the-lists">
+                  <li>Email</li>
+                  <li>Phone No.:</li>
+                  <li>Adress</li>
+                </ul>
+              </div>
             </div>
-            
+            <div class="list">
+              <h5>Navigation</h5>
+              <ul class="the-list">
+                <li>FAQs</li>
+                <li>Terms of service</li>
+                <li>Privacy Policy</li>
+                <li>Social Media handle</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+            <div class="list">
+              <h5>Navigation</h5>
+              <ul class="the-list">
+                <a href="#welcome"><li>Home</li></a>
+                <a href="#about-heading"><li>About Us</li></a>
+                <a href="#service"><li>Products</li></a>
+                <a href="html\marketplc.html"><li>Market Place</li></a>
+              </ul>
+            </div>
+            <div class="list">
+              <h5>Contact Us</h5>
+              <ul class="the-list">
+                <li>Email: Uphaqar@gmail.com</li>
+                <li>Phone No.: +234 08067752004</li>
+                <li>Address: Lagos, Nigeria</li>
+              </ul>
+            </div>
+          </div>
         </footer>
-    </section>
-</div>
+      </section>
+    </div>
 
-
- 
-<!-- Form login -->
-<form action="" onsubmit="return validateForm()">
-    <div class="container" id="popup">
+    <!-- Form login -->
+    <form action="" onsubmit="return validateForm()">
+      <div class="container" id="popup">
         <div class="close" onclick="toggle()">X</div>
         <h2>Log In</h2>
         <p>Please fill in your details to log in</p>
 
         <div class="input-box">
-            <input type="text" class="input-field" id="loginEmail" placeholder="Email Address"  required>
-            <i class="envelope"><img src="../image/email.png" alt=""></i>
+          <input
+            type="text"
+            class="input-field"
+            id="loginEmail"
+            placeholder="Email Address"
+            required
+          />
+          <i class="envelope"><img src="../image/email.png" alt="" /></i>
         </div>
         <div class="input-box">
-            <input type="password" class="input-field" id="loginPassword" placeholder="Password"  required>
-            <i class="envelope"><img src="../image/Lock.png" alt=""></i>
+          <input
+            type="password"
+            class="input-field"
+            id="loginPassword"
+            placeholder="Password"
+            required
+          />
+          <i class="envelope"><img src="../image/Lock.png" alt="" /></i>
         </div>
 
         <button type="submit" id="loginButton">Login</button>
         <div class="or">
-            <hr id="hr1"><span>or</span><hr id="hr2">
+          <hr id="hr1" />
+          <span>or</span>
+          <hr id="hr2" />
         </div>
         <div class="image">
-            <img class="size1" src="Facebook_Logo.png" alt="">
-            <img class="size2" src="google.jpeg" alt="">
+          <img class="size1" src="Facebook_Logo.png" alt="" />
+          <img class="size2" src="google.jpeg" alt="" />
         </div>
         <p>Don't have an account? <a href="signuppg.html">Sign_up</a></p>
-    </div>
-</form>
+      </div>
+    </form>
 
-
-
-
-
-<!-- Form sign up -->
-<form action="" class="form" id="formsignup">
-    <div class="container" id="signuppopupp" style="height: 480px;" >
-            <div class="close" onclick="closeButton()" id="closeButton">X</div>
+    <!-- Form sign up -->
+    <form action="" class="form" id="formsignup">
+      <div class="container" id="signuppopupp" style="height: 480px">
+        <div class="close" onclick="closeButton()" id="closeButton">X</div>
         <h2>Sign Up</h2>
         <p>Enter your details to create your account</p>
         <div class="input-box">
-            <input type="text" class="inputbox input-field" id="fullName" placeholder="Full Name" maxlength="15" required>
-            <i class="envelope"><img src="../image/user.png" alt=""></i>
-        </div>  
+          <input
+            type="text"
+            class="inputbox input-field"
+            id="fullName"
+            placeholder="Full Name"
+            maxlength="15"
+            required
+          />
+          <i class="envelope"><img src="../image/user.png" alt="" /></i>
+        </div>
         <div class="input-box">
-            <input type="text" class="inputbox input-field" id="email" placeholder="Email Address"  required>
-            <i class="envelope"><img src="../image/email.png" alt=""></i>
-        </div> 
+          <input
+            type="text"
+            class="inputbox input-field"
+            id="email"
+            placeholder="Email Address"
+            required
+          />
+          <i class="envelope"><img src="../image/email.png" alt="" /></i>
+        </div>
         <div class="input-box">
-            <input type="password" class="inputbox input-field" id="password" placeholder="Create Password"  required>
-            <i class="envelope"><img src="../image/Lock.png" alt=""></i>
-        </div> 
+          <input
+            type="password"
+            class="inputbox input-field"
+            id="password"
+            placeholder="Create Password"
+            required
+          />
+          <i class="envelope"><img src="../image/Lock.png" alt="" /></i>
+        </div>
         <div class="input-box">
-            <input type="text" class="inputbox input-field" id="jobTitle" placeholder="Job Title"  required>
-            <i class="envelope"><img src="../image/Lock.png" alt=""></i>
-        </div> 
+          <input
+            type="text"
+            class="inputbox input-field"
+            id="jobTitle"
+            placeholder="Job Title"
+            required
+          />
+          <i class="envelope"><img src="../image/Lock.png" alt="" /></i>
+        </div>
         <div class="input-box">
-            <input type="text" class="inputbox input-field" id="phoneNumber" placeholder="Phone Number" maxlength="15" required>
-            <i class="envelope"><img src="../image/Phone.png" alt=""></i>
-        </div> 
-        <span id="errorMessage"></span> 
-        <div class="agreement"><input type="checkbox"><label>&nbsp &nbsp I agree to the terms and conditions</label></div>
+          <input
+            type="text"
+            class="inputbox input-field"
+            id="phoneNumber"
+            placeholder="Phone Number"
+            maxlength="15"
+            required
+          />
+          <i class="envelope"><img src="../image/Phone.png" alt="" /></i>
+        </div>
+        <span id="errorMessage"></span>
+        <div class="agreement">
+          <input type="checkbox" /><label
+            >&nbsp &nbsp I agree to the terms and conditions</label
+          >
+        </div>
         <button type="submit" id="registerButton">Create Account</button>
-    </div>
-</form> 
-<!-- <div id="popup-modal" style="display: none;">
+      </div>
+    </form>
+    <!-- <div id="popup-modal" style="display: none;">
     <div id="modal-content">
         <div class="close" onclick="toggle()">X</div>
         <p id="popup-message"></p>
     </div>
 </div> -->
 
+    <!-- Onboarding form -->
+    <div class="onboarding-container" id="popupp">
+      <div class="onboarding-close" onclick="togglee()">X</div>
+      <!-- This div needs a proper semantic meaning or styling -->
+      <p>What best describes your role here?</p>
 
-<!-- Onboarding form -->
-<div class="onboarding-container" id="popupp">
-    <div class="onboarding-close" onclick="togglee()">X</div> <!-- This div needs a proper semantic meaning or styling -->
-    <p>What best describes your role here?</p>
-
-    <div class="cards-onboarding">
+      <div class="cards-onboarding">
         <a href="#" id="farmerb2b">
-            <div class="card-onboarding">
-                <img src="../image/hand-check.png" alt="Hand Check Icon">
-                <p>I am a Business owner looking to partner with  Agritech</p>
-                <button class="select-button" onclick="toggleb2b()">Select</button>
-            </div>
+          <div class="card-onboarding">
+            <img src="../image/hand-check.png" alt="Hand Check Icon" />
+            <p>I am a Business owner looking to partner with Agritech</p>
+            <button class="select-button" onclick="toggleb2b()">Select</button>
+          </div>
         </a>
         <a href="#" id="farmerexplore">
-        <div class="card-onboarding">
-            <img src="../image/farmerimg.png" alt="Hand Check Icon">
-            <p>I am a Farmer looking to explore my options with  Agritech</p>
+          <div class="card-onboarding">
+            <img src="../image/farmerimg.png" alt="Hand Check Icon" />
+            <p>I am a Farmer looking to explore my options with Agritech</p>
             <button class="select-button" onclick="toggleb2b()">Select</button>
-        </div>
+          </div>
         </a>
-    </div>
-   
-    <div class="onboarding-footer">
-        <p>Already have an account? <a href="">Login</a>
-        <p>By continuing, you agree to Agritech’s <a href="">Terms of Use</a> and confirm that you have read Agritech’s <a href="">Privacy Policy.</a></p>
-    </div>
-</div>
+      </div>
 
-<script src="javascriptfile\homepg.js"></script>
-</body>
+      <div class="onboarding-footer">
+        <p>Already have an account? <a href="">Login</a></p>
+        <p>
+          By continuing, you agree to Agritech’s <a href="">Terms of Use</a> and
+          confirm that you have read Agritech’s <a href="">Privacy Policy.</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="javascriptfile\homepg.js"></script>
+  </body>
 </html>
