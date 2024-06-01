@@ -346,6 +346,7 @@ hr {
   margin: 0;
   border-radius: 20px;
   width: 100%;
+  padding: 20px;
 }
 .info-container p {
   width: 570px;
