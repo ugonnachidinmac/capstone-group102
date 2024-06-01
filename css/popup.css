@@ -1,118 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-        
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 body {
-    font-family: 'Inter', sans-serif; /* Apply Inter font to the body */
-    /* background-color: rgb(190, 190, 194); */
+  font-family: "Inter", sans-serif; /* Apply Inter font to the body */
+  /* background-color: rgb(190, 190, 194); */
 }
 
 /* body{
     background-color: rgb(190, 190, 194);
     font-family: Arial, Helvetica, sans-serif;
 } */
-.container{
-    background-color: white;
-    width: 300px;
-    margin: 80px auto;
-    height: 400px;
-    border-radius: 10px;
-    padding: 25px;
+.container {
+  background-color: white;
+  width: 300px;
+  margin: 80px auto;
+  height: 400px;
+  border-radius: 10px;
+  padding: 25px;
 }
-.close{
-    color: black;
-    font-size: 18px;
-    text-align: right;
-    cursor: pointer;
+.close {
+  color: black;
+  font-size: 18px;
+  text-align: right;
+  cursor: pointer;
 }
-h2{
-    padding-top: 15px;
-    text-align: center;
-    margin-bottom: 15px;
-    color: rgb(46, 153, 0);
-    font-weight: 600;
+h2 {
+  padding-top: 15px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: rgb(46, 153, 0);
+  font-weight: 600;
 }
-p{
-    text-align: center;
-    font-size: 12.5px;
-    margin-bottom: 15px;
+p {
+  text-align: center;
+  font-size: 12.5px;
+  margin-bottom: 15px;
 }
-.input-field{
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-    width: 250px;
-    padding: 5px 10px 5px 38px;
-    margin-bottom: 0;
-    border: 1px solid rgb(176, 176, 176);
-    border-radius: 5px;
-    outline: none;
-    transition: .2s ease
+.input-field {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  width: 250px;
+  padding: 5px 10px 5px 38px;
+  margin-bottom: 0;
+  border: 1px solid rgb(176, 176, 176);
+  border-radius: 5px;
+  outline: none;
+  transition: 0.2s ease;
 }
-.input-box i{
-    position: relative;
-    top: -25px;
-    left: 5px;
-    color: rgb(186, 183, 183);
-}  
-.input-box img{
-    width: 20px;
-    margin: 0 4px;
+.input-box i {
+  position: relative;
+  top: -25px;
+  left: 5px;
+  color: rgb(186, 183, 183);
 }
-::-webkit-input-placeholder{
-    color: rgb(186, 183, 183);
-    padding-left: 8px; 
+.input-box img {
+  width: 20px;
+  margin: 0 4px;
+}
+::-webkit-input-placeholder {
+  color: rgb(186, 183, 183);
+  padding-left: 8px;
 }
 .input-box + .input-box {
-    margin-top: -12px; 
+  margin-top: -12px;
 }
-button{
-    padding: 8px;
-    width: 250px;
-    border-radius: 5px;
-    margin-bottom: 25px;
-    background-color: rgb(241, 201, 40);
-    color: rgb(0, 0, 0);
-    font-weight: 900;
-    border: none;
-    cursor: pointer;
-} 
-button:hover{
-    background-color: rgba(243, 193, 10, 0.549);
+button {
+  padding: 8px;
+  width: 250px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  background-color: rgb(241, 201, 40);
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
 }
-.or{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; 
+button:hover {
+  background-color: rgba(243, 193, 10, 0.549);
 }
-.or span{
-    margin: 0;
+.or {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-.size1{
-    width: 25px;  
+.or span {
+  margin: 0;
 }
-.size2{
-    width: 25px;
-    
+.size1 {
+  width: 25px;
 }
-.image{
-    display: flex;
-    flex-direction: row;
-    gap:40px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
+.size2 {
+  width: 25px;
 }
-a{
-    font-size: 9.5px;
-    text-decoration: none;
-    color: rgb(241, 201, 40);
+.image {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
-#hr1{
-    width: 250px;
-   margin-left: 0;
-   margin-right: 15px;
+a {
+  font-size: 9.5px;
+  text-decoration: none;
+  color: rgb(241, 201, 40);
 }
-#hr2{
-    width: 250px;
-    margin-right: 0;
-   margin-left: 15px;
+#hr1 {
+  width: 250px;
+  margin-left: 0;
+  margin-right: 15px;
+}
+#hr2 {
+  width: 250px;
+  margin-right: 0;
+  margin-left: 15px;
 }
