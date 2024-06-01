@@ -1,175 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Store</title>
-    <link rel="stylesheet" href="../css/training.css">
-  
-</head>
-<body>
+    <link rel="stylesheet" href="../css/training.css" />
+    <link rel="icon" href="../image/logo capstone.jpg" type="image/x-icon" />
+  </head>
+  <body>
     <div id="blurx">
-        <nav class="market-header">
-            <div class="left-header">
-                <div><img src="../image/arrowleft.png" alt=""></div>
-                <img src="../image/marketplace.png" alt="">
-                <a href="../html/mystore.html"><p>My Store</p></a> 
+      <nav class="market-header">
+        <div class="left-header">
+          <div><img src="../image/arrowleft.png" alt="" /></div>
+          <img src="../image/marketplace.png" alt="" />
+          <a href="../html/mystore.html"><p>My Store</p></a>
+        </div>
+        <div class="right-header">
+          <a href="#" onclick="togglex()">
+            <button>+</button>
+            <p>Add Product</p></a
+          >
+        </div>
+      </nav>
+      <aside>
+        <div id="asidediv">
+          <div id="aside-logo">
+            <img src="../image/logo capstone.jpg" alt="" />
+          </div>
+
+          <div class="aside-content" id="asideContent">
+            <li>
+              <a href="../index.html" class="link">
+                <i class="icons"><img src="../image/homeblk.png" alt="" /></i
+                >Home</a
+              >
+            </li>
+          </div>
+          <div class="aside-content">
+            <li>
+              <a href="../html/training.html" class="link">
+                <i class="icons"
+                  ><img src="../image/trainingimg.png" alt="" /></i
+                >Training</a
+              >
+            </li>
+          </div>
+          <div class="aside-content">
+            <li>
+              <a href="../html/farmerhomepg.html" class="link">
+                <i class="icons"><img src="../image/monitoring.png" alt="" /></i
+                >Farm monitoring</a
+              >
+            </li>
+          </div>
+          <div class="aside-content">
+            <li>
+              <a href="../html/market-place.html" class="link">
+                <i class="icons"><img src="../image/marketf.png" alt="" /></i
+                >Market Place</a
+              >
+            </li>
+          </div>
+          <div class="aside-content">
+            <li>
+              <a href="../html/subscription.html" class="link">
+                <i class="icons"
+                  ><img src="../image/subscriptions.png" alt="" /></i
+                >Subscription</a
+              >
+            </li>
+          </div>
+          <div class="aside-content">
+            <li>
+              <a href="#welcome" class="link">
+                <i class="icons"><img src="../image/setings.png" alt="" /></i
+                >Settings</a
+              >
+            </li>
+          </div>
+          <div class="aside-content">
+            <li>
+              <a href="../html/contactuspg.html" class="link">
+                <i class="icons"
+                  ><img src="../image/phonehandleblack.png" alt="" /></i
+                >Contact Us</a
+              >
+            </li>
+          </div>
+          <div class="aside-content sign-out">
+            <li>
+              <a href="#welcome" class="link">
+                <i class="icons"><img src="../image/signout.png" alt="" /></i
+                >Sign Out</a
+              >
+            </li>
+          </div>
+        </div>
+
+        <div id="main-container">
+          <div class="searchbox">
+            <div>
+              <img src="../image/search.png" alt="" />
+              <input type="text" placeholder="Search product..." />
             </div>
-            <div class="right-header"><a href="#" onclick="togglex()">
-                <button>+</button>
-                <p>Add Product</p></a>
+            <div>
+              <img src="../image/filtericon.png" alt="" />
+              <p>Filters</p>
             </div>
+          </div>
 
-        </nav>
-        <aside>   
-            <div id="asidediv">
-                <div id="aside-logo">
-                    <img src="../image/logo capstone.jpg" alt="">
-                </div>
-            
-                <div class="aside-content" id="asideContent">
-                    <li><a href="../index.html" class="link"> <i class="icons"><img src="../image/homeblk.png" alt=""></i>Home</a></li>
-                </div>
-                <div class="aside-content">
-                    <li><a href="../html/training.html" class="link"> <i class="icons"><img src="../image/trainingimg.png" alt=""></i>Training</a></li>
-                </div>
-                <div class="aside-content">
-                    <li><a href="../html/farmerhomepg.html" class="link"> <i class="icons"><img src="../image/monitoring.png" alt=""></i>Farm monitoring</a></li>
-                </div>
-                <div class="aside-content">
-                    <li><a href="../html/market-place.html" class="link"> <i class="icons"><img src="../image/marketf.png" alt=""></i>Market Place</a></li>
-                </div>
-                <div class="aside-content">
-                    <li><a href="../html/subscription.html" class="link"> <i class="icons"><img src="../image/subscriptions.png" alt=""></i>Subscription</a></li>
-                </div>
-                <div class="aside-content">
-                    <li><a href="#welcome" class="link"> <i class="icons"><img src="../image/setings.png" alt=""></i>Settings</a></li>
-                </div>
-                <div class="aside-content">
-                    <li><a href="../html/contactuspg.html" class="link"> <i class="icons"><img src="../image/phonehandleblack.png" alt=""></i>Contact Us</a></li>
-                </div>
-                <div class="aside-content sign-out">
-                    <li><a href="#welcome" class="link"> <i class="icons"><img src="../image/signout.png" alt=""></i>Sign Out</a></li>
-                </div>
-            </div>
-            
-            <div id="main-container">
+          <div>
+            <table id="productTable">
+              <!-- Table Header Row -->
+              <tr>
+                <th class="square-box">
+                  <input type="checkbox" class="checkbox" />
+                </th>
+                <th>image</th>
+                <th>Products</th>
+                <th>Price</th>
+                <th>Date Added</th>
+                <th>Total sales</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
 
-                <div class="searchbox">
-                    <div>
-                        <img src="../image/search.png" alt="">
-                        <input type="text" placeholder="Search product...">
-                    </div>
-                    <div>
-                        <img src="../image/filtericon.png" alt="">
-                        <p>Filters</p>
-                    </div>
-                </div>
+              <!-- First Data Row -->
+              <tr class="row" id="row1">
+                <td><input type="checkbox" name="check" class="checkbox" /></td>
+                <td>
+                  <img src="../image/storeimg1.png" alt="" />
+                </td>
+                <td>Fresh Tomato</td>
+                <td># 5,000</td>
+                <td>29 December 2022</td>
+                <td># 35,000</td>
+                <td style="color: #ec3751">Out of Stock</td>
+                <td>
+                  <img src="../image/pencilicon.png" alt="" />
+                  <img
+                    src="../image/deleteicons.png"
+                    alt=""
+                    class="deleteIcon"
+                    data-row-id="row1"
+                  />
+                </td>
+              </tr>
+              <tr class="row" id="row2">
+                <td><input type="checkbox" name="check" class="checkbox" /></td>
+                <td>
+                  <img src="../image/storeimg2.png" alt="" />
+                </td>
+                <td>Lettuce</td>
+                <td># 5,000</td>
+                <td>29 December 2022</td>
+                <td># 5,000</td>
+                <td style="color: #ddbb32">In stock</td>
+                <td>
+                  <img src="../image/pencilicon.png" alt="" />
+                  <img
+                    src="../image/deleteicons.png"
+                    alt=""
+                    class="deleteIcon"
+                    data-row-id="row2"
+                  />
+                </td>
+              </tr>
 
-                <div>
-                    <table id="productTable">
-                        <!-- Table Header Row -->
-                        <tr>
-                            <th class="square-box"><input type="checkbox" class="checkbox"></th>
-                            <th>image</th>
-                            <th>Products</th>
-                            <th>Price</th>
-                            <th>Date Added</th>
-                            <th>Total sales</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                        
-                        <!-- First Data Row -->
-                        <tr class="row" id="row1">
-                            <td><input type="checkbox" name="check" class="checkbox"></td>
-                            <td>
-                                <img src="../image/storeimg1.png" alt="" >
-                            </td>
-                            <td>Fresh Tomato</td>
-                            <td># 5,000</td>
-                            <td>29 December 2022</td>
-                            <td># 35,000</td>
-                            <td style="color: #EC3751;">Out of Stock</td>
-                            <td> 
-                                <img src="../image/pencilicon.png" alt="">
-                                <img src="../image/deleteicons.png" alt="" class="deleteIcon" data-row-id="row1">
-                            </td>
-                        </tr>
-                        <tr class="row" id="row2">
-                            <td><input type="checkbox" name="check" class="checkbox"></td>
-                            <td>
-                                <img src="../image/storeimg2.png" alt="">
-                            </td>
-                            <td>Lettuce</td>
-                            <td># 5,000</td>
-                            <td>29 December 2022</td>
-                            <td># 5,000</td>
-                            <td style="color: #DDBB32;">In stock</td>
-                            <td> 
-                                <img src="../image/pencilicon.png" alt="">
-                                <img src="../image/deleteicons.png" alt="" class="deleteIcon" data-row-id="row2">
-                            </td>
-                        </tr>
-
-                        <tr class="row" id="row3">
-                            <td><input type="checkbox" name="check" class="checkbox"></td>
-                            <td>
-                                <img src="../image/storeimg3.png" alt="">
-                            </td>
-                            <td>Brocolli</td>
-                            <td># 5,000</td>
-                            <td>29 December 2022</td>
-                            <td># 50,000</td>
-                            <td style="color: #EC3751;">Out of Stock</td>
-                            <td> 
-                                <img src="../image/pencilicon.png" alt="">
-                                <img src="../image/deleteicons.png"  alt="" class="deleteIcon" data-row-id="row3">
-                            </td>
-                        </tr>
-
-                    </table>    
-                </div>
-            </div>
-        </aside>
-
+              <tr class="row" id="row3">
+                <td><input type="checkbox" name="check" class="checkbox" /></td>
+                <td>
+                  <img src="../image/storeimg3.png" alt="" />
+                </td>
+                <td>Brocolli</td>
+                <td># 5,000</td>
+                <td>29 December 2022</td>
+                <td># 50,000</td>
+                <td style="color: #ec3751">Out of Stock</td>
+                <td>
+                  <img src="../image/pencilicon.png" alt="" />
+                  <img
+                    src="../image/deleteicons.png"
+                    alt=""
+                    class="deleteIcon"
+                    data-row-id="row3"
+                  />
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </aside>
     </div>
-  
 
     <!-- to register new product -->
     <form>
-    <div class="container-upload" id="popupx">
+      <div class="container-upload" id="popupx">
         <div class="close" onclick="togglex()">X</div>
-            <h2>Upload New Product</h2>
-            <h6>Tips</h6>
-            <p>Ensure you upload high quality pictures of your products
-            </p>
-            
-            <div>
-                <div class="img"><img src="../image/picture-icon.png" alt=""></div>
-                <p class="drag">Drag and drop image here, or click add image
-                        Add Image</p>
-                <button class="add-image">Add Image</button>
-            </div>
-        
-            <div>
-                <h2>General Information</h2>
-                <p>Product Name</p> 
-                <input type="text" name="" id="text1" placeholder="Type product name here. . .">
-                <p>Description</p> 
-                <input type="text" name="" id="text2" placeholder="Type product description here. . .">
-                <label for="">Price</label>
-                <input type="text" name="" id="text3" placeholder="$ Type price here. . .">
-            </div>
-            <div class="button-option">
-                <button>X Cancel</button>
-                <button onclick="addProduct()">+ Add Product</button>
-            </div>
-                          
+        <h2>Upload New Product</h2>
+        <h6>Tips</h6>
+        <p>Ensure you upload high quality pictures of your products</p>
+
+        <div>
+          <div class="img"><img src="../image/picture-icon.png" alt="" /></div>
+          <p class="drag">
+            Drag and drop image here, or click add image Add Image
+          </p>
+          <button class="add-image">Add Image</button>
         </div>
+
+        <div>
+          <h2>General Information</h2>
+          <p>Product Name</p>
+          <input
+            type="text"
+            name=""
+            id="text1"
+            placeholder="Type product name here. . ."
+          />
+          <p>Description</p>
+          <input
+            type="text"
+            name=""
+            id="text2"
+            placeholder="Type product description here. . ."
+          />
+          <label for="">Price</label>
+          <input
+            type="text"
+            name=""
+            id="text3"
+            placeholder="$ Type price here. . ."
+          />
+        </div>
+        <div class="button-option">
+          <button>X Cancel</button>
+          <button onclick="addProduct()">+ Add Product</button>
+        </div>
+      </div>
     </form>
-    
-        <!-- Data upload code 
+
+    <!-- Data upload code 
         <div class="container-upload" id="popupx">
             <div class="close" onclick="togglex()">X</div>
             <h2>Upload New Product</h2>
@@ -203,63 +274,54 @@
 
     <script src="../javascriptfile/homepg.js"></script>
 
-
     <script>
-     
+      // let myDiv2 = document.getElementById('asideContent');
 
-      
+      // myDiv2.addEventListener('mouseover', () => {
+      //     myDiv2.style.backgroundColor = 'rgb(46, 153, 0)';
 
-        // let myDiv2 = document.getElementById('asideContent');
-       
+      // });
 
-        // myDiv2.addEventListener('mouseover', () => {
-        //     myDiv2.style.backgroundColor = 'rgb(46, 153, 0)';
-            
-        // });
+      // myDiv2.addEventListener('mouseleave', () => {
+      //     myDiv2.style.backgroundColor = '';
+      // });
 
-        // myDiv2.addEventListener('mouseleave', () => {
-        //     myDiv2.style.backgroundColor = '';
-        // });
+      // let myLink = document.querySelector('.links a');
 
+      // myLink.addEventListener('mouseover', () => {
 
+      //     myLink.style.color = 'white';
+      // });
 
-        // let myLink = document.querySelector('.links a');
+      // myLink.addEventListener('mouseleave', () => {
 
-        // myLink.addEventListener('mouseover', () => {
-        
-        //     myLink.style.color = 'white';
-        // });
+      //     myLink.style.color = '';
+      // });
 
-        // myLink.addEventListener('mouseleave', () => {
-            
-        //     myLink.style.color = '';
-        // });
+      // let myIcon = document.querySelector('.links');
 
-        
-        // let myIcon = document.querySelector('.links');
+      // myIcon.addEventListener('mouseover', () => {
 
-        // myIcon.addEventListener('mouseover', () => {
-        
-        //     myIcon.style.color = 'white';
-        // });
+      //     myIcon.style.color = 'white';
+      // });
 
-        // myIcon.addEventListener('mouseleave', () => {
-            
-        //     myIcon.style.color = '';
-        // });
+      // myIcon.addEventListener('mouseleave', () => {
 
-//         delete
-        
-//        document.querySelector('table').addEventListener('click', function(event) {
-//         // Check if the clicked element is the "deleteicons" image
-//           if (event.target.classList.contains('delete-icon')) {
-//         // Find the closest parent <tr> element and remove it
-//          let row = event.target.closest('tr');
-//     if (row) {
-//        row.remove();
-//     }
-//   }
-//  });
+      //     myIcon.style.color = '';
+      // });
+
+      //         delete
+
+      //        document.querySelector('table').addEventListener('click', function(event) {
+      //         // Check if the clicked element is the "deleteicons" image
+      //           if (event.target.classList.contains('delete-icon')) {
+      //         // Find the closest parent <tr> element and remove it
+      //          let row = event.target.closest('tr');
+      //     if (row) {
+      //        row.remove();
+      //     }
+      //   }
+      //  });
     </script>
-</body>
+  </body>
 </html>
