@@ -101,7 +101,6 @@ body {
 }
 .link:hover,
 .active {
-  color: rgb(241, 201, 40);
   border-bottom: 2px solid #000;
 }
 .nav-button {
@@ -465,13 +464,6 @@ hr {
   opacity: 1;
   transform: 0.5;
 }
-/* .close:hover,
-.onboarding-close:hover{
-    background-color: red;
-    width: 90px; 
-} */
-
-/* market place page css */
 
 .market-plc p {
   font-size: 57px;
@@ -651,7 +643,7 @@ hr {
   display: flex;
   flex-direction: row;
   margin-left: 110px;
-  width: 1245px;
+  width: 100%;
   gap: 60px;
   margin-bottom: 50px;
 }
@@ -726,7 +718,7 @@ hr {
 
 .cards-onboarding {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   width: 100%;
   padding: 0 20px;
