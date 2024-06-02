@@ -41,8 +41,7 @@ function register(event) {
     })
     .then((data) => {
       console.log(data);
-      window.location.href = "/index.html";
-      // alert("Successfully Registered");
+      window.location.href = "/html/farmerhomepg.html";
     })
     .catch((error) => {
       console.error("Error", error);
@@ -59,67 +58,47 @@ function register(event) {
       document.getElementById("phoneNumber").value = "";
     });
 }
-/*login function*/
-fetch(`${url}/login`, {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify(userData),
-})
-  .then((response) => {
-    if (!response.ok) {
-      // If the response status is not okay, handle the error
-      return response.json().then((errorData) => {
-        // Parse the JSON error data
-        throw new Error(
-          `Server error: ${errorData.error}. Status: ${errorData.status}`
-        );
-      });
-    }
-    return response.json(); // If response is okay, parse JSON
-  })
-  .then((data) => {
-    // Maintain the URL change
-    window.location.href = "/html/farmerhomepg.html";
-    console.log(data);
-  })
-  .catch((error) => {
-    console.error("Error:", error.message);
-  });
+
 registerButton.addEventListener("click", register);
 loginButton.addEventListener("click", login);
-
-// function login(event) {
-//   event.preventDefault();
-//   let loginEmail = document.getElementById("loginEmail").value;
-//   let loginPassword = document.getElementById("loginPassword").value;
-//   const userData = {
-//     email: loginEmail,
-//     password: loginPassword,
-//   };
-//   console.log(userData);
-//   fetch(`${url}/login`, {
-//     method: "POST",
-//     headers: { "Content-Type": "application/json" },
-//     body: JSON.stringify(userData),
-//   })
-//     .then((response) => {
-//       if (response.ok) {
-//         // return response.json();
-//         console.log("God is good");
-//       } else {
-//         console.log("Who is this");
-//       }
-//     })
-//     .then((data) => {
-//       // window.location.href = "/html/farmerhomepg.html";
-//       console.log(data);
-//     })
-//     .catch((error) => {
-//       console.error("Error", error);
-//     });
-// }
+/*login function*/
+function login(event) {
+  event.preventDefault();
+  let loginEmail = document.getElementById("loginEmail").value;
+  let loginPassword = document.getElementById("loginPassword").value;
+  const userData = {
+    email: loginEmail,
+    password: loginPassword,
+  };
+  console.log(userData);
+  fetch(`${url}/login`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(userData),
+  })
+    .then((response) => {
+      if (!response.ok) {
+        // If the response status is not okay, handle the error
+        return response.json().then((errorData) => {
+          // Parse the JSON error data
+          throw new Error(
+            `Server error: ${errorData.error}. Status: ${errorData.status}`
+          );
+        });
+      }
+      return response.json(); // If response is okay, parse JSON
+    })
+    .then((data) => {
+      // Maintain the URL change
+      window.location.href = "/html/farmerhomepg.html";
+      console.log(data);
+    })
+    .catch((error) => {
+      console.error("Error:", error.message);
+    });
+}
 
 // store table
 function addProduct(event) {
