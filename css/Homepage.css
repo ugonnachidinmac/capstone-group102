@@ -803,6 +803,219 @@ hr {
   text-align: center;
 } */
 
+/* About Us CSS */
+
+.aboutPgImg1{
+  width: 1440px;
+  height: 525.27px;
+  position: relative;
+}
+.aboutustxt{
+  position: absolute;
+  top: 260px;
+  left: 580px;
+  color: white;
+  font-size: 57px;
+  font-weight: 700;
+}
+.aboutUsPgTxt{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: 50px 30px 20px 90px;
+}
+.aboutPgImg2{
+  width: 500.66px;
+  height: 536.73px;
+}
+.aboutUsPgTxt1{
+  width: 705px;
+  height: 537px;
+}
+.aboutUsPgTxt1 h2{
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+}
+.aboutUsPgTxt1 span{
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+  text-align: justify;
+}
+.aboutUsPgTxt1 h2:nth-child(3){
+  margin-top: 30px;
+}
+.aboutUsPgTxth2{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: 50px 70px 5px 90px;
+}
+.aboutUsPgTxth2 h2{
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+}
+.aboutUsPgTxt1 h2{
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+}
+.aboutUsPgTxth2 span{
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+  text-align: justify;
+  line-height: 1.5;
+}
+.aboutPgImg3{
+  width: 465px;
+  height: 430px;
+  margin-top: 10px;
+}
+.aboutUsPgTxth3{
+background-color: #FBEEBC;
+display: flex;
+gap: 5px;
+flex-direction: column;
+align-items: center;
+justify-content: center; 
+}
+.aboutUsPgTxth3 h2{
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+}
+.aboutUsPgTxth3 span{
+  width: 1215px;
+  height: 154px;
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+.aboutUsPgTxth4{
+  margin: 50px 70px 5px 90px;
+}
+.aboutUsPgTxth4 h2{
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+}
+.aboutUsPgTxth4Box1{
+  width: 385px;
+  height: 285.17;
+  background-color: #95A4FC;
+  border-radius: 10px;
+  padding: 25px 5px 20px 35px;
+}
+.aboutUsPgTxth4Box2{
+  width: 385px;
+  height: 285.17;
+  background-color: #C6C7F8;
+  border-radius: 10px;
+  padding: 25px 5px 20px 35px;
+}
+.aboutUsPgTxth4Box3{
+  width: 385px;
+  height: 285.17;
+  background-color: #A8C5DA;
+  border-radius: 10px;
+  padding: 25px 5px 20px 35px;
+}
+.aboutUsPgTxth4Box4{
+  width: 385px;
+  height: 285.17;
+  background-color: #B1E3FF;
+  border-radius: 10px;
+  padding: 25px 5px 20px 35px;
+}
+.aboutUsPgTxth4Box5{
+  width: 385px;
+  height: 285.17;
+  background-color: #A1E3CB;
+  border-radius: 10px;
+  padding: 25px 5px 20px 35px;
+}
+.aboutUsPgTxth4Box6{
+  width: 385px;
+  height: 285.17;
+  background-color: #BAEDBD;
+  border-radius: 10px;
+  padding: 25px 5px 20px 35px;
+}
+.aboutUsPgTxth4Box1 div h2{
+ font-size: 19px;
+ font-weight: 600; 
+}
+.aboutUsPgTxth4Box1 div span{
+  font-size: 16px;
+  font-weight: 500; 
+ }
+ .aboutUsPgTxth4Box2 div h2{
+  font-size: 19px;
+  font-weight: 600; 
+ }
+ .aboutUsPgTxth4Box2 div span{
+   font-size: 16px;
+   font-weight: 500; 
+  }
+  .aboutUsPgTxth4Box3 div h2{
+    font-size: 19px;
+    font-weight: 600; 
+   }
+   .aboutUsPgTxth4Box3 div span{
+     font-size: 16px;
+     font-weight: 500; 
+    }
+    .aboutUsPgTxth4Box4 div h2{
+      font-size: 19px;
+      font-weight: 600; 
+     }
+     .aboutUsPgTxth4Box4 div span{
+       font-size: 16px;
+       font-weight: 500; 
+      }
+      .aboutUsPgTxth4Box5 div h2{
+       font-size: 19px;
+       font-weight: 600; 
+      }
+      .aboutUsPgTxth4Box5 div span{
+        font-size: 16px;
+        font-weight: 500; 
+       }
+       .aboutUsPgTxth4Box6 div h2{
+         font-size: 19px;
+         font-weight: 600; 
+        }
+        .aboutUsPgTxth4Box6 div span{
+          font-size: 16px;
+          font-weight: 500; 
+         }
+ .aboutUsPgTxth4Box1Img{
+  display: block;
+ margin: 0 auto;
+ }
+ .aboutUsPgTxth4Flex{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+ }
+.aboutUsPgTxth4Flex2{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+
+
 
 /* Responsiveness */
  @media screen and (max-width: 720px) {
