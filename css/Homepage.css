@@ -871,7 +871,6 @@ hr {
   text-align: center;
 }
 
-<<<<<<< HEAD
 /* About Us CSS */
 
 .aboutPgImg1{
@@ -1088,9 +1087,7 @@ justify-content: center;
 
 /* Responsiveness */
  @media screen and (max-width: 720px) {
-=======
 @media screen and (max-width: 720px) {
->>>>>>> fc67fd57fe393c22026d59b17fdf8ebaec3ad3fa
   .hamburger,
   .toggle-menu {
     display: block;
