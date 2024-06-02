@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/Homepage.css" />
+    <link rel="stylesheet" href="/css/popup.css" />
+    <link rel="icon" href="/image/logo capstone.jpg" type="image/x-icon" />
+    <title>Signup</title>
+  </head>
+  <body>
+    <form action="" class="form" id="formsignup">
+      <div class="container" id="signuppopupp" style="height: 480px">
+        <div class="close" onclick="closeButton()" id="closeButton">X</div>
+        <h2>Sign Up</h2>
+        <p>Enter your details to create your account</p>
+        <div class="input-box">
+          <input
+            type="text"
+            class="inputbox input-field"
+            id="fullName"
+            placeholder="Full Name"
+            maxlength="15"
+            required
+          />
+          <i class="envelope"><img src="/image/user.png" alt="" /></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            class="inputbox input-field"
+            id="email"
+            placeholder="Email Address"
+            required
+            minlength="8"
+          />
+          <i class="envelope"><img src="/image/email.png" alt="" /></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            class="inputbox input-field"
+            id="password"
+            placeholder="Create Password"
+            required
+          />
+          <i class="envelope"><img src="/image/Lock.png" alt="" /></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            class="inputbox input-field"
+            id="jobTitle"
+            placeholder="Job Title"
+            required
+          />
+          <i class="envelope"><img src="/image/Business.png" alt="" /></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            class="inputbox input-field"
+            id="phoneNumber"
+            placeholder="Phone Number"
+            maxlength="15"
+            required
+          />
+          <i class="envelope"><img src="/image/Phone.png" alt="" /></i>
+        </div>
+        <span id="errorMessage"></span>
+        <div class="agreement">
+          <input type="checkbox" /><label
+            >&nbsp &nbsp I agree to the terms and conditions</label
+          >
+        </div>
+        <button type="submit" id="registerButton">Create Account</button>
+      </div>
+    </form>
+  </body>
+</html>
