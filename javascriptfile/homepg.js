@@ -1,12 +1,8 @@
 const url = "https://agritechlink-backend.onrender.com/api/users";
 
 const registerButton = document.getElementById("registerButton");
-const loginButton = document.getElementById("loginButton");
 
-// function showPopup(message){
-//   document.getElementById("popup-message").textContent = message
-//   document.getElementById("popup-modal").style.display = "block"
-// }
+registerButton.addEventListener("click", register);
 
 function register(event) {
   event.preventDefault();
@@ -23,6 +19,14 @@ function register(event) {
     phoneNumber: phoneNumber,
   };
 
+  // Create loading spinner element
+  const loadingSpinner = document.createElement("div");
+  loadingSpinner.className = "spinner";
+
+  // Replace the button with the spinner
+  registerButton.style.display = "none";
+  registerButton.parentNode.appendChild(loadingSpinner);
+
   fetch(`${url}/register`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -30,22 +34,24 @@ function register(event) {
   })
     .then((response) => {
       console.log(response);
-      if(!response.ok){
-        throw new Error("Registration failed")
+      if (!response.ok) {
+        throw new Error("Registration failed");
       }
       return response.json();
     })
     .then((data) => {
       console.log(data);
-      alert("Successfully Registered")
-      // showPopup("Registration successful")
+      window.location.href = "/index.html";
+      // alert("Successfully Registered");
     })
     .catch((error) => {
       console.error("Error", error);
-      alert("Registration failed " + error.message)
-      // showPopup("Registration failed" + error.message)
+      alert("Registration failed " + error.message);
     })
     .finally(() => {
+      // Hide the spinner and show the button again
+      loadingSpinner.remove();
+      registerButton.style.display = "inline-block";
       document.getElementById("fullName").value = "";
       document.getElementById("email").value = "";
       document.getElementById("password").value = "";
@@ -53,60 +59,87 @@ function register(event) {
       document.getElementById("phoneNumber").value = "";
     });
 }
-
-
-
 /*login function*/
-function login(event) {
-  event.preventDefault();
-  let loginEmail = document.getElementById("loginEmail").value;
-  let loginPassword = document.getElementById("loginPassword").value;
-  const userData = {
-    email: loginEmail,
-    password: loginPassword,
-  };
-  console.log(userData);
-  fetch(`${url}/login`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(userData),
+fetch(`${url}/login`, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(userData),
+})
+  .then((response) => {
+    if (!response.ok) {
+      // If the response status is not okay, handle the error
+      return response.json().then((errorData) => {
+        // Parse the JSON error data
+        throw new Error(
+          `Server error: ${errorData.error}. Status: ${errorData.status}`
+        );
+      });
+    }
+    return response.json(); // If response is okay, parse JSON
   })
-    .then((response) => {
-      console.log(response);
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-
-      window.location.href = "/html/farmerhomepg.html";
-    })
-    .catch((error) => {
-      console.error("Error", error);
-    });
-}
+  .then((data) => {
+    // Maintain the URL change
+    window.location.href = "/html/farmerhomepg.html";
+    console.log(data);
+  })
+  .catch((error) => {
+    console.error("Error:", error.message);
+  });
 registerButton.addEventListener("click", register);
 loginButton.addEventListener("click", login);
 
+// function login(event) {
+//   event.preventDefault();
+//   let loginEmail = document.getElementById("loginEmail").value;
+//   let loginPassword = document.getElementById("loginPassword").value;
+//   const userData = {
+//     email: loginEmail,
+//     password: loginPassword,
+//   };
+//   console.log(userData);
+//   fetch(`${url}/login`, {
+//     method: "POST",
+//     headers: { "Content-Type": "application/json" },
+//     body: JSON.stringify(userData),
+//   })
+//     .then((response) => {
+//       if (response.ok) {
+//         // return response.json();
+//         console.log("God is good");
+//       } else {
+//         console.log("Who is this");
+//       }
+//     })
+//     .then((data) => {
+//       // window.location.href = "/html/farmerhomepg.html";
+//       console.log(data);
+//     })
+//     .catch((error) => {
+//       console.error("Error", error);
+//     });
+// }
 
-
-
-// store table 
-function addProduct(event){
+// store table
+function addProduct(event) {
   event.preventDefault(); // Prevent form submission
 
-  var texts1 = document.getElementById('text1').value;
-  var texts2 = document.getElementById('text2').value;
-  var texts3 = document.getElementById('text3').value;
+  var texts1 = document.getElementById("text1").value;
+  var texts2 = document.getElementById("text2").value;
+  var texts3 = document.getElementById("text3").value;
   var date = new Date().toDateString();
 
-  var table = document.getElementById('productTable').getElementsByTagName('tbody')[0];
+  var table = document
+    .getElementById("productTable")
+    .getElementsByTagName("tbody")[0];
   var row = table.insertRow();
 
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
   var cell3 = row.insertCell(2);
   var cell4 = row.insertCell(3);
-  
+
   cell1.innerHTML = texts1;
   cell2.innerHTML = texts2;
   cell3.innerHTML = texts3;
