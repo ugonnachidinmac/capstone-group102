@@ -1323,8 +1323,8 @@ p {
 .productTop{
   width: 1439px;
   height: 294px;
-  background-color:#195400;
-  color: white;
+  background-color:#195400; 
+  color: black;
 }
 .proflex1{
   display: flex;
@@ -1349,7 +1349,26 @@ p {
 .proagr1{
   margin-left: 90px;
   margin-right: 40px;
+  font-size: 22px;
+  font-weight: 500;
 }
+.proOurPro{
+  font-size: 36px;
+  font-weight: 700;
+}
+.proLearn{
+  font-size: 22px;
+  font-weight: 700;
+}
+.protxttop1{
+  margin-top: 60px;
+}
+
+
+
+
+
+
 /* Responsiveness */
 @media screen and (max-width: 720px) {
   .hamburger,
