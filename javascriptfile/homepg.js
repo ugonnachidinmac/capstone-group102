@@ -521,3 +521,20 @@ myDiv2.addEventListener("mouseover", () => {
 myDiv2.addEventListener("mouseleave", () => {
   myDiv2.style.backgroundColor = "";
 });
+
+const links = document.querySelectorAll(".menu .link");
+const currentPath = window.location.pathname.split("/").pop();
+console.log(currentPath);
+
+// links.forEach((link) => {
+//   if (link.getAttribute("href") === currentPath) {
+//     link.classList.add("active");
+//   }
+// });
+links.forEach((link) => {
+  const href = link.getAttribute("href");
+  console.log("href:", href, "currentPath:", currentPath);
+  if (href === currentPath) {
+    link.classList.add("active");
+  }
+});

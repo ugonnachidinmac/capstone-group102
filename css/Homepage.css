@@ -65,9 +65,9 @@ body {
   transition: 0.5s;
 }
 .menu li a:visited,
-.menu li a:active{
-   color: #f1c928;
-   border-bottom: #f1c928;
+.menu li a:active {
+  color: #f1c928;
+  border-bottom: #f1c928;
 }
 .mktMenu {
   margin-top: 45px;
@@ -81,10 +81,10 @@ body {
   margin-top: -15px;
   margin-left: -50px;
 }
-.mrkNav{
+.mrkNav {
   margin-top: -20px;
 }
-.searchFilter{
+.searchFilter {
   margin-top: -60px;
 }
 .nav-menu ul li {
@@ -110,9 +110,6 @@ body {
 .hideout {
   display: none;
 }
-/* .link:hover,
-.active {
-} */
 
 .menu .link:hover {
   color: rgb(241, 201, 40);
@@ -122,14 +119,14 @@ body {
 /* Link style on active (when clicked) */
 .menu .link:active {
   color: rgb(241, 201, 40);
-  text-decoration-color: rgb(241, 201, 40);
   border-bottom: 2px solid rgb(241, 201, 40);
 }
 
-.menu .link.active {
+.active {
   color: rgb(241, 201, 40);
   border-bottom: 2px solid rgb(241, 201, 40);
 }
+
 .nav-button {
   display: flex;
   align-items: center;
@@ -379,11 +376,10 @@ hr {
   width: 100%;
   height: 380px;
   padding: 20px;
-  margin: 0;
 }
 .offer-image2 {
   height: 385px;
-  margin: 0;
+  margin-bottom: 12px;
   border-radius: 20px;
   width: 100%;
   padding: 20px;
@@ -537,12 +533,13 @@ hr {
   gap: 10px;
   font-size: 15px;
   font-weight: 600;
-  background-color: rgb(241, 201, 40);;
+  background-color: rgb(241, 201, 40);
   margin: 0;
   width: 98px;
   height: 40px;
   padding: 10px 20px;
   margin-top: 18px;
+  cursor: pointer;
 }
 .filterGrey span {
   margin-top: 5px;
@@ -550,7 +547,7 @@ hr {
   font-size: 14px;
   font-weight: 500;
 }
-.filterGrey img{
+.filterGrey img {
   margin-left: 10px;
   width: 20px;
   height: 20px;
@@ -566,6 +563,7 @@ hr {
   padding: 5px 8px;
   border-radius: 5px;
   margin-top: -70px;
+  text-overflow: ellipsis;
 }
 .search {
   width: 440px;
@@ -582,6 +580,9 @@ hr {
   font: 14px;
   font-weight: 400;
   padding-left: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .searchInput:focus {
   outline: none;
@@ -695,6 +696,34 @@ hr {
   width: 100%;
   gap: 60px;
   margin-bottom: 50px;
+}
+.displayout1,
+.displayout2,
+.displayout3 {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.2);
+}
+
+#offer-button {
+  background-color: #f1c928;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.1s ease;
+  font-size: 15px;
+  margin-left: 20px;
+  border: 2px solid rgb(241, 201, 40);
+}
+
+#offer-button:hover {
+  background-color: #e1c659;
+  border: 2px solid rgb(245, 201, 24);
 }
 .see-more {
   padding: 10px 25px;
@@ -1136,105 +1165,104 @@ hr {
   margin-bottom: 25px;
   margin-left: 90px;
 }
-.ourTeam{
+.ourTeam {
   margin-left: 90px;
   width: 1440px;
   height: 1950px;
 }
-.teamhr{
+.teamhr {
   border: 1px solid #979797;
 }
-.ourTeamA{
+.ourTeamA {
   font-size: 32px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.agriI{
+.agriI {
   font-size: 28px;
   font-weight: 700;
-  color: #216D00;
+  color: #216d00;
   margin-bottom: 40px;
 }
-.teamImg{
+.teamImg {
   width: 350px;
   height: 344.03px;
 }
-.teamName{
+.teamName {
   font-size: 28px;
   font-weight: 700;
   margin-top: 15px;
 }
-.teamRole{
+.teamRole {
   font-size: 24px;
   font-weight: 600;
-  color: #216D00;
+  color: #216d00;
   margin-top: 10px;
 }
-.teamInspire{
+.teamInspire {
   font-size: 22px;
   font-weight: 500;
   margin-top: 15px;
 }
-.teamCards{
+.teamCards {
   width: 382px;
   height: 550.33px;
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1), 
-                0 16px 24px rgba(0, 0, 0, 0.1), 
-                0 24px 32px rgba(0, 0, 0, 0.1);
-                border-radius: 15px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1), 0 16px 24px rgba(0, 0, 0, 0.1),
+    0 24px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
 }
-.teamCard{
+.teamCard {
   margin: 15px;
 }
 
-.teamCardsGrid{
+.teamCardsGrid {
   display: flex;
   flex-direction: row;
   gap: 25px;
 }
-.topMargin{
+.topMargin {
   margin-top: 45px;
 }
-.joinAboutUs{
+.joinAboutUs {
   font-size: 36px;
   font-weight: 700;
 }
-.togetherAboutUs{
+.togetherAboutUs {
   margin-left: 90px;
   font-size: 20px;
   font-weight: 500;
   width: 1225px;
   text-align: left;
 }
-.exploreSign{
+.exploreSign {
   display: flex;
   flex-direction: row;
   gap: 25px;
   align-items: center;
   justify-content: center;
 }
-.exploreaboutUs{
+.exploreaboutUs {
   display: flex;
   flex-direction: row;
   gap: 15px;
   align-items: center;
   justify-content: center;
-  color: #2E9900;
+  color: #2e9900;
   font-size: 20px;
   font-weight: 700;
 }
-.userImg{
+.userImg {
   position: absolute;
   margin-top: 9px;
   margin-left: 10px;
 }
-.userImg2{
+.userImg2 {
   position: absolute;
   margin-top: 25px;
   margin-left: 10px;
 }
-.userInput{
+.userInput {
   padding-left: 35px;
   width: 520px;
   height: 36px;
@@ -1243,22 +1271,22 @@ hr {
   border-radius: 5px;
   border: 1px solid #aba5a5;
 }
-.contantFormAboutUs{
+.contantFormAboutUs {
   display: flex;
   flex-direction: row;
   gap: 200px;
   margin-top: 80px;
   margin-left: 150px;
 }
-.contantHeadingAboutUs{
+.contantHeadingAboutUs {
   width: 750px;
   font-size: 32px;
   font-weight: 700;
 }
-.topMarginAboutUs{
+.topMarginAboutUs {
   margin-top: 15px;
 }
-#textareaAboutUs{
+#textareaAboutUs {
   width: 520px;
   height: 92px;
   border-radius: 5px;
@@ -1269,14 +1297,12 @@ hr {
   font-weight: 400;
   border: 1px solid #aba5a5;
 }
-.sendAboutUs{
+.sendAboutUs {
   width: 240px;
   height: 48px;
   font-size: 16px;
   font-weight: 500;
 }
-
-
 
 /* Responsiveness */
 @media screen and (max-width: 720px) {
@@ -1527,4 +1553,3 @@ hr {
     line-height: 1.5;
   }
 }
- }
