@@ -1036,6 +1036,7 @@ hr {
   background-color: #b1e3ff;
   border-radius: 10px;
   padding: 25px 15px 20px 35px;
+  color: black;
 }
 .aboutUsPgTxth4Box5 {
   width: 385px;
@@ -1079,6 +1080,7 @@ hr {
 .aboutUsPgTxth4Box4 div h2 {
   font-size: 19px;
   font-weight: 600;
+  color: black;
 }
 .aboutUsPgTxth4Box4 div span {
   font-size: 16px;
@@ -1087,6 +1089,7 @@ hr {
 .aboutUsPgTxth4Box5 div h2 {
   font-size: 19px;
   font-weight: 600;
+  color: black;
 }
 .aboutUsPgTxth4Box5 div span {
   font-size: 16px;
@@ -1095,6 +1098,7 @@ hr {
 .aboutUsPgTxth4Box6 div h2 {
   font-size: 19px;
   font-weight: 600;
+  color: black;
 }
 .aboutUsPgTxth4Box6 div span {
   font-size: 16px;
@@ -1115,6 +1119,7 @@ hr {
   gap: 24px;
   margin-top: 35px;
   margin-bottom: 25px;
+  margin-left: 90px;
 }
 .ourTeam{
   margin-left: 90px;
