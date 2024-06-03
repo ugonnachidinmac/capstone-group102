@@ -722,7 +722,7 @@ hr {
 }
 
 #offer-button:hover {
-  background-color: #e1c659;
+  background-color: rgba(243, 193, 10, 0.549);
   border: 2px solid rgb(245, 201, 24);
 }
 .see-more {
