@@ -35,27 +35,28 @@ function register(event) {
     .then((response) => {
       console.log(response);
       if (!response.ok) {
-        throw new Error("Registration failed");
+        // If the response status is not okay, handle the error
+        return response.json().then((errorData) => {
+          console.log(errorData);
+          // Parse the JSON error data
+          throw new Error(errorData?.message);
+        });
       }
       return response.json();
     })
     .then((data) => {
       console.log(data);
-      window.location.href = "/html/farmerhomepg.html";
+
+      // window.location.href = "/html/farmerhomepg.html";
     })
     .catch((error) => {
       console.error("Error", error);
-      alert("Registration failed " + error.message);
+      alert(error.message);
     })
     .finally(() => {
       // Hide the spinner and show the button again
       loadingSpinner.remove();
       registerButton.style.display = "inline-block";
-      document.getElementById("fullName").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("password").value = "";
-      document.getElementById("jobTitle").value = "";
-      document.getElementById("phoneNumber").value = "";
     });
 }
 
@@ -70,7 +71,6 @@ function login(event) {
     email: loginEmail,
     password: loginPassword,
   };
-  console.log(userData);
   fetch(`${url}/login`, {
     method: "POST",
     headers: {
@@ -82,21 +82,21 @@ function login(event) {
       if (!response.ok) {
         // If the response status is not okay, handle the error
         return response.json().then((errorData) => {
+          console.log(errorData);
           // Parse the JSON error data
-          throw new Error(
-            `Server error: ${errorData.error}. Status: ${errorData.status}`
-          );
+          throw new Error(errorData?.message);
         });
       }
       return response.json(); // If response is okay, parse JSON
     })
     .then((data) => {
       // Maintain the URL change
+      alert("Welcome back " + data?.name);
       window.location.href = "/html/farmerhomepg.html";
-      console.log(data);
     })
     .catch((error) => {
       console.error("Error:", error.message);
+      alert(error.message);
     });
 }
 
