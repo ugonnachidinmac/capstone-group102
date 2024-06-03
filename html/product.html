@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -72,23 +72,37 @@
         </div>
       </header>
      
-      <div class="proUp">
-       <div> Innovative Agricultural  Solutions for a Sustainable Future</div>
+      <div class="productTop">
+       <h3> Innovative Agricultural  Solutions for a Sustainable Future</h3>
       </div>
       <div>
         <h2>Our Products</h2>
-        <span>At Agritechlink we provide the innovative Agritecture model, a pioneering solution featuring a pyramid-shaped structure and energy pallets. This innovative approach revolutionizes conventional farming by maximizing natural sunlight, minimizing energy consumption, and integrating agroforestry techniques.</span>
+        <div class="proagr1">At Agritechlink we provide the innovative Agritecture model, a pioneering solution featuring a pyramid-shaped structure and energy pallets. This innovative approach revolutionizes conventional farming by maximizing natural sunlight, minimizing energy consumption, and integrating agroforestry techniques.</div>
       </div>
       <div class="proflex1">
         <div>
-            <h4>Agritecture Farming Model</h4>
+            <h4 class="proh4">Agritecture Farming Model</h4>
             <img src="../image/proimg1.png" alt="">
         </div>
         <div class="protxt1">
-            <span class="protxt1Span">
+            <div class="protxtSpan1">
                 We are designing a suspended agritecture in the shape of a pyramid, featuring energy pallets with curved forms made of glassy black steel for heat retention. These pallets serve as sun trackers and mirrors, directing natural sunlight into the building's six layered structure. Each layer measures 379.7 feet, with proportions calculated according to the prototype.<br><br>
-In the middle of the building, there's a spiraled transport track system, resembling a train rack, along with an elevator system, to facilitate movement due to the building's length. The steel structure is painted glassy black to retain heat, accommodating soil technology for growing industrial crops.
-            </span><br>
+                In the middle of the building, there's a spiraled transport track system, resembling a train rack, along with an elevator system, to facilitate movement due to the building's length. The steel structure is painted glassy black to retain heat, accommodating soil technology for growing industrial crops.
+            </div><br>
+            <button>Learn more</button>
+        </div>
+      </div>
+
+      <div class="proflex1">
+        <div>
+            <h4 class="proh4">Precision Farming</h4>
+            <img src="../image/proimg2.png" alt="">
+        </div>
+        <div class="protxt1">
+            <div class="protxtSpan1">
+                Precision Farming, the second innovative product offered by AgritechLink, represents a groundbreaking approach to agricultural management and production. Developed and managed by Uphaqar, our parent company, Precision Farming leverages cutting-edge technology and data-driven insights to optimize every aspect of farming operations.<br><br>
+                Overview: Precision Farming redefines traditional farming methods by integrating advanced technologies such as satellite imagery, drones, sensors, and data analytics. By harnessing real-time data and analytics, farmers gain unprecedented visibility into their crops, soil health, weather patterns, and machinery performance..
+            </div><br>
             <button>Learn more</button>
         </div>
       </div>
@@ -159,4 +173,154 @@ In the middle of the building, there's a spiraled transport track system, resemb
       </section>
     </div>
 
- 
+    <!-- Form login -->
+    <form action="" onsubmit="return validateForm()">
+      <div class="container" id="popup">
+        <div class="close" onclick="toggle()">X</div>
+        <h2>Log In</h2>
+        <p>Please fill in your details to log in</p>
+
+        <div class="input-box">
+          <input
+            type="text"
+            class="input-field"
+            id="loginEmail"
+            placeholder="Email Address"
+            required
+          />
+          <i class="envelope"><img src="../image/email.png" alt="" /></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            class="input-field"
+            id="loginPassword"
+            placeholder="Password"
+            required
+          />
+          <i class="envelope"><img src="../image/Lock.png" alt="" /></i>
+        </div>
+
+        <button type="submit" id="loginButton">Login</button>
+        <div class="or">
+          <hr id="hr1" />
+          <span>or</span>
+          <hr id="hr2" />
+        </div>
+        <div class="image">
+          <img class="size1" src="Facebook_Logo.png" alt="" />
+          <img class="size2" src="google.jpeg" alt="" />
+        </div>
+        <p>
+          Don't have an account?
+          <a href="#" onclick="toggle();togglee()">Sign Up</a>
+        </p>
+      </div>
+    </form>
+
+    <!-- Form sign up -->
+    <form action="" class="form" id="formsignup">
+      <div class="container" id="signuppopupp" style="height: 480px">
+        <div class="close" onclick="closeButton()" id="closeButton">X</div>
+        <h2>Sign Up</h2>
+        <p>Enter your details to create your account</p>
+        <div class="input-box">
+          <input
+            type="text"
+            class="inputbox input-field"
+            id="fullName"
+            placeholder="Full Name"
+            maxlength="15"
+            required
+          />
+          <i class="envelope"><img src="../image/user.png" alt="" /></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            class="inputbox input-field"
+            id="email"
+            placeholder="Email Address"
+            required
+          />
+          <i class="envelope"><img src="../image/email.png" alt="" /></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            class="inputbox input-field"
+            id="password"
+            placeholder="Create Password"
+            required
+          />
+          <i class="envelope"><img src="/image/Lock.png" alt="" /></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            class="inputbox input-field"
+            id="jobTitle"
+            placeholder="Job Title"
+            required
+          />
+          <i class="envelope"><img src="/image/Business.png" alt="" /></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            class="inputbox input-field"
+            id="phoneNumber"
+            placeholder="Phone Number"
+            maxlength="15"
+            required
+          />
+          <i class="envelope"><img src="../image/Phone.png" alt="" /></i>
+        </div>
+        <span id="errorMessage"></span>
+        <div class="agreement">
+          <input type="checkbox" /><label
+            >&nbsp &nbsp I agree to the terms and conditions</label
+          >
+        </div>
+        <button type="submit" id="registerButton">Create Account</button>
+      </div>
+    </form>
+
+    <!-- Onboarding form -->
+    <div class="onboarding-container" id="popupp">
+      <div class="onboarding-close" onclick="togglee()">X</div>
+      <!-- This div needs a proper semantic meaning or styling -->
+      <p>What best describes your role here?</p>
+
+      <div class="cards-onboarding">
+        <a href="#" id="farmerb2b">
+          <div class="card-onboarding">
+            <img src="../image/hand-check.png" alt="Hand Check Icon" />
+            <p>I am a Business owner looking to partner with Agritech</p>
+            <button class="select-button" onclick="toggleb2b()">Select</button>
+          </div>
+        </a>
+        <a href="#" id="farmerexplore">
+          <div class="card-onboarding">
+            <img src="../image/farmerimg.png" alt="Hand Check Icon" />
+            <p>I am a Farmer looking to explore my options with Agritech</p>
+            <button class="select-button" onclick="toggleb2b()">Select</button>
+          </div>
+        </a>
+      </div>
+
+      <div class="onboarding-footer">
+        <p>
+          Already have an account?
+          <a href="#" onclick="togglee();toggle()">Login</a>
+        </p>
+        <p>
+          By continuing, you agree to Agritech’s <a href="">Terms of Use</a> and
+          confirm that you have read Agritech’s <a href="">Privacy Policy.</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="/javascriptfile/homepg.js"></script>
+  </body>
+</html>
