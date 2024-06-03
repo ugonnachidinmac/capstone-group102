@@ -706,17 +706,17 @@ hr {
 }
 
 #offer-button {
-  background-color: #f1c928;
-  padding: 15px 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-color: rgb(241, 201, 40);
+  font-weight: 500;
+  padding: 10px 10px;
+  border: 2px solid rgb(241, 201, 40);
+  border-radius: 8px;
   font-weight: 600;
-  color: black;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.1s ease;
-  font-size: 15px;
+  font-size: 22px;
+  width: 202px;
+  height: 60px;
   margin-left: 20px;
   border: 2px solid rgb(241, 201, 40);
 }
