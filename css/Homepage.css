@@ -587,6 +587,10 @@ hr {
 .searchInput:focus {
   outline: none;
 }
+
+p {
+  color: black;
+}
 .imgSearch {
   margin-left: 10px;
   margin-top: 7px;
@@ -599,6 +603,7 @@ hr {
   flex-direction: row;
   padding: 5px 20px 30px 110px;
   margin-bottom: 40px;
+  justify-content: space-between;
 }
 .most h2:nth-child(1) {
   color: black;
@@ -719,6 +724,7 @@ hr {
   height: 60px;
   margin-left: 20px;
   border: 2px solid rgb(241, 201, 40);
+  cursor: pointer;
 }
 
 #offer-button:hover {
@@ -1518,6 +1524,7 @@ hr {
     font-size: 22px;
     width: 202px;
     height: 60px;
+    cursor: pointer;
   }
   hr {
     margin-top: 50px;
