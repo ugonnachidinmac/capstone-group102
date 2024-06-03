@@ -46,8 +46,9 @@ function register(event) {
     })
     .then((data) => {
       console.log(data);
+      alert("Hello " + data?.name + ", Welcome to Agritechlink");
 
-      // window.location.href = "/html/farmerhomepg.html";
+      window.location.href = "/html/farmerhomepg.html";
     })
     .catch((error) => {
       console.error("Error", error);
