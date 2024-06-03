@@ -110,9 +110,25 @@ body {
 .hideout {
   display: none;
 }
-.link:hover,
+/* .link:hover,
 .active {
-  border-bottom: 2px solid #000;
+} */
+
+.menu .link:hover {
+  color: rgb(241, 201, 40);
+  border-bottom: 2px solid rgb(241, 201, 40);
+}
+
+/* Link style on active (when clicked) */
+.menu .link:active {
+  color: rgb(241, 201, 40);
+  text-decoration-color: rgb(241, 201, 40);
+  border-bottom: 2px solid rgb(241, 201, 40);
+}
+
+.menu .link.active {
+  color: rgb(241, 201, 40);
+  border-bottom: 2px solid rgb(241, 201, 40);
 }
 .nav-button {
   display: flex;
