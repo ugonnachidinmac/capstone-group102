@@ -21,18 +21,7 @@ body {
   pointer-events: none;
   user-select: none;
 }
-/* .nav {
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width:100%;
-    height: 80px;
-    background: rgb(255, 255, 255);
-    z-index: 100;
-    margin-bottom: 20px;
-} */
+
 .nav {
   position: fixed;
   width: 100%;
@@ -848,94 +837,6 @@ p {
   font-size: 16px;
 }
 
-/* onboarding css
-.onboarding-container {
-  width: 1150px;
-  height: 947px;
-  background-color: #e8e8e8;
-  /* margin: 100px auto; */
-/* border-radius: 20px;
-  position: absolute;
-  top: 50px;
-  border: 10px solid #aba5a5;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-.onboarding-close {
-  font-size: 24px;
-  font-weight: 400;
-  position: relative;
-  top: 30px;
-  left: 1010px;
-  cursor: pointer;
-}
-.onboarding-container p:nth-child(2) {
-  font-size: 25px;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-.card-onboarding {
-  background-color: white;
-  border: 2px solid #aba5a5;
-  width: 450px;
-  height: 320px;
-  margin: 20px 30px;
-  border-radius: 10px;
-}
-.card-onboarding p:nth-child(2) {
-  margin-top: 10px;
-  font-size: 24px;
-}
-.card-onboarding img {
-  width: 150px;
-  height: 150px;
-  margin: 10px 20px 0 160px;
-}
-.cards-onboarding {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 282px;
-  margin-left: 70px;
-}
-.cards-onboarding a {
-  text-decoration: none;
-  color: black;
-}
-.onboarding-footer {
-  margin-top: 270px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.onboarding-footer p:nth-child(1) {
-  font-size: 20px;
-}
-.onboarding-footer p:nth-child(1) a {
-  font-size: 20px;
-  color: #f1c928;
-  text-decoration: none;
-}
-.onboarding-footer p:nth-child(2) {
-  font-size: 15px;
-}
-
-.onboarding-footer p:nth-child(2) a {
-  font-size: 15px;
-  color: #f1c928;
-  text-decoration: none;
-}
-.select-button {
-  width: 120px;
-  height: 40px;
-  background-color: #f1c928;
-  font-size: px;
-  font-weight: 400px;
-  margin-left: 165px;
-} */
-
 #popup-modal {
   position: fixed;
   top: 0;
@@ -1191,7 +1092,7 @@ p {
   color: #216d00;
   margin-bottom: 40px;
 }
-.teamImg{
+.teamImg {
   width: 340px;
   height: 320.03px;
 }
@@ -1218,10 +1119,9 @@ p {
 .teamCards {
   width: 382px;
   height: 460.33px;
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1), 
-                0 16px 24px rgba(0, 0, 0, 0.1), 
-                0 24px 32px rgba(0, 0, 0, 0.1);
-                border-radius: 15px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1), 0 16px 24px rgba(0, 0, 0, 0.1),
+    0 24px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
   height: 550.33px;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1), 0 16px 24px rgba(0, 0, 0, 0.1),
     0 24px 32px rgba(0, 0, 0, 0.1);
@@ -1320,55 +1220,87 @@ p {
 }
 
 /* product */
-.productTop{
-  width: 1439px;
+.productTop {
+  width: 100%;
   height: 294px;
-  background-color:#195400; 
-  color: black;
+  background-color: #195400;
 }
-.proflex1{
+.proflex1 {
   display: flex;
-  flex-direction: row;
   gap: 35px;
   margin-top: 40px;
   margin-left: 90px;
   margin-right: 40px;
 }
-.protxtSpan1{
+.protxtSpan1 {
   font-size: 22px;
   font-weight: 500;
   margin-top: 10px;
   padding-top: 40px;
   margin-bottom: 40px;
+  width: 759px;
+  height: 352px;
+  gap: 0px;
+  opacity: 0px;
 }
-.proh4{
+.proh4 {
   margin-bottom: 10px;
   font-size: 32px;
   font-weight: 700;
 }
-.proagr1{
+.proagr1 {
   margin-left: 90px;
   margin-right: 40px;
   font-size: 22px;
   font-weight: 500;
 }
-.proOurPro{
+.proOurPro {
   font-size: 36px;
   font-weight: 700;
+  color: #000;
 }
-.proLearn{
+.proLearn {
+  margin-top: 5px;
+  background-color: rgb(241, 201, 40);
+  font-weight: 500;
+  padding: 10px 20px;
+  border: 2px solid rgb(241, 201, 40);
+  border-radius: 8px;
+  font-weight: 600;
   font-size: 22px;
-  font-weight: 700;
+  width: 202px;
+  height: 60px;
 }
-.protxttop1{
+
+.first-product-image {
+  width: 461.95px;
+  height: 432.62px;
+  border-radius: 7.31px 0px 0px 0px;
+  border: 0.72px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.product-h3 {
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+.protxttop1 {
   margin-top: 60px;
 }
 
+.content-wrapper {
+  padding-top: 60px;
+}
 
-
-
-
-
+.top-product-container {
+  height: 294px;
+  background: #195400 100%;
+}
 /* Responsiveness */
 @media screen and (max-width: 720px) {
   .hamburger,
@@ -1410,7 +1342,7 @@ p {
   .nav-menu ul li .link {
     color: rgb(241, 201, 40);
   }
-  
+
   .nav-menu ul li {
     padding-bottom: 70px;
   }
