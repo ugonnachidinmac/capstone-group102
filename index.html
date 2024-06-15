@@ -479,16 +479,15 @@
 
     <script src="/javascriptfile/homepg.js"></script>
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    var currentPageUrl = window.location.href;
-    var links = document.querySelectorAll('.link');
-    links.forEach(function(link) {
-        if (link.href && link.href === currentPageUrl) {
-            link.classList.add('active');
-        }
-    });
-});
-
+      document.addEventListener("DOMContentLoaded", function () {
+        var currentPageUrl = window.location.href;
+        var links = document.querySelectorAll(".link");
+        links.forEach(function (link) {
+          if (link.href && link.href === currentPageUrl) {
+            link.classList.add("active");
+          }
+        });
+      });
     </script>
   </body>
 </html>

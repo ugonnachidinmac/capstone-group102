@@ -294,10 +294,9 @@
                     </div>  
                     </div>
                 </div>   
+         </aside>
 
-             </aside>
-
-         </div>
+    </div>
 
     <div class="container-upload" id="popupx">
         <div class="close" onclick="togglex()">X</div>
@@ -329,97 +328,17 @@
                           
         </div>
     
-        <!-- Data upload code 
-        <div class="container-upload" id="popupx">
-            <div class="close" onclick="togglex()">X</div>
-            <h2>Upload New Product</h2>
-            <h6>Tips</h6>
-            <p>Ensure you upload high quality pictures of your products
-            </p>
-            
-            <div>
-                <div class="img"><img src="../html/image/picture-icon.png" alt=""></div>
-                <p class="drag">Drag and drop image here, or click add image
-                        Add Image</p>
-                <button class="add-image">Add Image</button>
-            </div>
-        
-            <div>
-                <h2>General Information</h2>
-                <p>Product Name</p> 
-                <input type="text" name="" id="" placeholder="Type product name here. . .">
-                <p>Description</p> 
-                <input type="text" name="" id="" placeholder="Type product description here. . .">
-                <label for="">Price</label>
-                <input type="text" name="" id="" placeholder="$ Type price here. . .">
-            </div>
-            <div class="button-option">
-                <button>X Cancel</button>
-                <button>+ Add Product</button>
-            </div>
-                          
-        </div>
-     -->
-
     <script src="../javascriptfile/homepg.js"></script>
-
-
-    <script>
-     
-
-      
-
-        // let myDiv2 = document.getElementById('asideContent');
-       
-
-        // myDiv2.addEventListener('mouseover', () => {
-        //     myDiv2.style.backgroundColor = 'rgb(46, 153, 0)';
-            
-        // });
-
-        // myDiv2.addEventListener('mouseleave', () => {
-        //     myDiv2.style.backgroundColor = '';
-        // });
-
-
-
-        // let myLink = document.querySelector('.links a');
-
-        // myLink.addEventListener('mouseover', () => {
-        
-        //     myLink.style.color = 'white';
-        // });
-
-        // myLink.addEventListener('mouseleave', () => {
-            
-        //     myLink.style.color = '';
-        // });
-
-        
-        // let myIcon = document.querySelector('.links');
-
-        // myIcon.addEventListener('mouseover', () => {
-        
-        //     myIcon.style.color = 'white';
-        // });
-
-        // myIcon.addEventListener('mouseleave', () => {
-            
-        //     myIcon.style.color = '';
-        // });
-
-        //delete
-        
-//         document.querySelector('table').addEventListener('click', function(event) {
-//   // Check if the clicked element is the "deleteicons" image
-//   if (event.target.classList.contains('delete-icon')) {
-//     // Find the closest parent <tr> element and remove it
-//     let row = event.target.closest('tr');
-//     if (row) {
-//       row.remove();
-//     }
-//   }
-// });
+     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var currentPageUrl = window.location.href;
+        var links = document.querySelectorAll(".link");
+        links.forEach(function (link) {
+          if (link.href && link.href === currentPageUrl) {
+            link.classList.add("active");
+          }
+        });
+      });
     </script>
 </body>
 </html>
