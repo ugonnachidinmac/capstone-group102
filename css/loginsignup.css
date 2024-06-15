@@ -56,10 +56,7 @@
 .hideout{
     display: none;
 }
-.link:hover,
-.active {
-    border-bottom: 2px solid #000;
-}
+
 .nav-button{
     display: flex;
     flex-direction: row;

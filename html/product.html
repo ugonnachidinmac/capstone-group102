@@ -31,7 +31,7 @@
               >
             </li>
             <li>
-              <a href="#service" class="link"
+              <a href="#service" class="link active"
                 ><i class="evalope"><img src="../image/aboutus.png" alt="" /></i
                 >Products</a
               >
@@ -92,7 +92,11 @@
         <div class="proflex1">
           <div>
             <h4 class="proh4">Agritecture Farming Model</h4>
-            <img src="../image/proimg1.png" class="first-product-image" alt="Agritecture Farming Model" />
+            <img
+              src="../image/proimg1.png"
+              class="first-product-image"
+              alt="Agritecture Farming Model"
+            />
           </div>
           <div class="protxt1">
             <div class="protxtSpan1">
@@ -135,7 +139,6 @@
           </div>
         </div>
       </div>
-
 
       <section class="section-footer" id="market">
         <footer class="footer">
@@ -347,5 +350,16 @@
     </div>
 
     <script src="/javascriptfile/homepg.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var currentPageUrl = window.location.href;
+        var links = document.querySelectorAll(".link");
+        links.forEach(function (link) {
+          if (link.href && link.href === currentPageUrl) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

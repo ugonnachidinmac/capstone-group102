@@ -91,6 +91,10 @@ body {
   position: absolute;
   margin-left: 90px;
 }
+
+.nav-menu ul li .link.active {
+  color: #f1c928;
+}
 .evalope {
   display: none;
   position: relative;
@@ -100,21 +104,7 @@ body {
   display: none;
 }
 
-.menu .link:hover {
-  color: rgb(241, 201, 40);
-  border-bottom: 2px solid rgb(241, 201, 40);
-}
-
 /* Link style on active (when clicked) */
-.menu .link:active {
-  color: rgb(241, 201, 40);
-  border-bottom: 2px solid rgb(241, 201, 40);
-}
-
-.active {
-  color: rgb(241, 201, 40);
-  border-bottom: 2px solid rgb(241, 201, 40);
-}
 
 .nav-button {
   display: flex;
@@ -859,7 +849,7 @@ p {
 /* About Us CSS */
 
 .aboutPgImg1 {
-  width: 1440px;
+  width: 100%;
   height: 500.27px;
   position: relative;
 }
@@ -1301,6 +1291,7 @@ p {
   height: 294px;
   background: #195400 100%;
 }
+
 /* Responsiveness */
 @media screen and (max-width: 720px) {
   .hamburger,
@@ -1339,9 +1330,6 @@ p {
     width: 100%;
     padding-bottom: 40px;
   }
-  .nav-menu ul li .link {
-    color: rgb(241, 201, 40);
-  }
 
   .nav-menu ul li {
     padding-bottom: 70px;
@@ -1351,7 +1339,6 @@ p {
     padding: 30px;
     width: 200px;
     font-size: 18px;
-    box-shadow: 0 1px 0 rgba(246, 199, 11, 0.848) inset;
     border-bottom: none;
     outline: none;
   }
